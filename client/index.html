@@ -5,38 +5,43 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div class="page-wrap">
+		<header class="clear-after one-whole">
+			<div class="container">
+				<div class="float-left">
+					<a href="/">Kelly Walker</a>
+				</div>
+				<div class="float-right">
+					<ul>
+						<li><a href="/">Projects</a></li>
+						<li><a href="/">Blog</a></li>
+						<li><a href="/">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-	<header class="clear-after one-whole">
 		<div class="container">
-			<div class="float-left">
-				<a href="/">Kelly Walker</a>
-			</div>
-			<div class="float-right">
-				<ul>
-					<li><a href="/">Projects</a></li>
-					<li><a href="/">Blog</a></li>
-					<li><a href="/">About</a></li>
-				</ul>
-			</div>
+			<div ui-view></div>
 		</div>
-	</header>
-
-	<div class="container">
-		<h1>Content coming soon . . . </h1>
-		<a href="blog/cool-in-30-part-1/cool-in-30-part-1.html">Blog 1</a>
-
-		<div ui-view></div>
 	</div>
-
 
 	<footer>
 		<div class="container">
-			<p class="text-center small gray padding-top-15">Copyright 2014 Kelly Walker</p>
+			<ul class="padding-one-and-half--top text-center small">
+				<li><a href="mailto:walkerkellywalker@gmail.com">Email</a></li>
+				<li><a href="https://twitter.com/kwalker3690">Twitter</a></li>
+				<li><a href="http://dribbble.com/kelly_walker">Dribbble</a></li>
+				<li><a href="https://github.com/kwalker3690">Github</a></li>
+			</ul>
 		</div>
 	</footer>
 
 	<script src="lib/angular/angular.min.js"></script>
 	<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="home/home.js"></script>
+	<script src="project/projects.js"></script>
+	<script src="project/project-services.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>

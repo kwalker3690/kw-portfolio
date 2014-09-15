@@ -15,6 +15,19 @@ module.exports = function(grunt) {
           'client/style.css': 'client/styles/style.scss'
         }
       }
+    },
+
+    nodemon: {
+      dev: {
+        script: 'server.js'
+      }
+    },
+
+    watch: {
+      css: {
+        files: '**/*.scss',
+        tasks: ['sass']
+      }
     }
   });
 
@@ -22,6 +35,21 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-nodemon');
+
+  grunt.registerTask('dev', function (target) {
+    // Running nodejs in a different process and displaying output on the main console
+    var nodemon = grunt.util.spawn({
+         cmd: 'grunt',
+         grunt: true,
+         args: 'nodemon'
+    });
+    nodemon.stdout.pipe(process.stdout);
+    nodemon.stderr.pipe(process.stderr);
+
+    grunt.task.run([ 'watch' ]);
+  });
 
   grunt.registerTask('default', [
   	'jshint',

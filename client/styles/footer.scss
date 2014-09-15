@@ -1,6 +1,41 @@
 footer {
 	margin-top: $three;
-	color: $white;
 	background: $dark-gray;
-	height: $five;
+	height: $four-and-half;
+
+	ul {
+
+		li {
+			display:inline;
+			padding-left: $one;
+			padding-right: $one;
+
+			a {
+				font-family: $oswald;
+				font-weight: 300;
+				text-transform: uppercase;
+				color: white;
+				opacity: 0.7;
+				text-decoration: none;
+				position: relative;
+				@include transition(opacity .2s);
+
+				&:hover {
+					color: $white;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+// Allow footer to be sticky to bottom of page
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -7.5rem;
+
+	&:after {
+		content: '';
+		display: block;
+	}
 }

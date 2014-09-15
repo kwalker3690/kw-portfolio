@@ -1,1 +1,13 @@
-<h1>I'm Home!</h1>
+<h1>Kelly Walker's Portfolio</h1>
+
+<ul class="home">
+	<li ng-repeat="project in projects">
+		<a ui-sref="{{ project.name }}" class="padding-three--all clear-after">
+			<h2 class="float-left">{{ project.name }}</h2>
+
+			<ul class="float-right inline-list">
+				<li ng-repeat="tag in project.tags" class="margin-one--sides small">{{ tag }}</li>
+			</ul>
+		</a>
+	</li>
+</ul>

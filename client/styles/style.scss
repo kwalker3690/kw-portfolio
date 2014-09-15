@@ -6,11 +6,14 @@
 @import 'header';
 @import 'layout-helpers';
 @import 'footer';
+
+// File specific SASS
+@import '../home/home';
 @import '../blog/blog';
 
 html, body {
 	font-family: sans-serif;
-	background: $white;
+	background: $light-gray;
 	color: $black;
 	font-family: $lora;
 	font-weight: normal;

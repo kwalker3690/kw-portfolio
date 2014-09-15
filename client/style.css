@@ -48,9 +48,6 @@ a {
   a:hover {
     color: #00CAFF; }
 
-ul {
-  margin-bottom: 4rem; }
-
 .text-center {
   text-align: center; }
 
@@ -77,9 +74,11 @@ header {
     text-decoration: none;
     top: 1.5rem;
     position: relative;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
     transition: opacity 0.2s; }
     header a:hover {
-      color: white;
+      color: #FFF;
       opacity: 1; }
   header ul li {
     display: inline;
@@ -97,7 +96,10 @@ header {
   margin: 0 auto; }
 
 .row {
-  margin-bottom: 50px; }
+  margin-bottom: 5rem; }
+
+.inline-list li {
+  display: inline; }
 
 .clear-after:after {
   content: '';
@@ -150,20 +152,283 @@ header {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-.margin-top-15 {
-  margin-top: 15px; }
+.margin-one--all {
+  margin: 1rem; }
 
-.padding-top-15 {
-  padding-top: 15px; }
+.margin-one--sides {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.margin-one--ends {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.margin-one--left {
+  margin-left: 1rem; }
+
+.margin-one--right {
+  margin-right: 1rem; }
+
+.margin-one--bottom {
+  margin-bottom: 1rem; }
+
+.margin-one--top {
+  margin-top: 1rem; }
+
+.margin-one-and-half--all {
+  margin: 1.5rem; }
+
+.margin-one-and-half--sides {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem; }
+
+.margin-one-and-half--ends {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.margin-one-and-half--left {
+  margin-left: 1.5rem; }
+
+.margin-one-and-half--right {
+  margin-right: 1.5rem; }
+
+.margin-one-and-half--bottom {
+  margin-bottom: 1.5rem; }
+
+.margin-one-and-half--top {
+  margin-top: 1.5rem; }
+
+.margin-two--all {
+  margin: 2rem; }
+
+.margin-two--sides {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.margin-two--ends {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.margin-two--left {
+  margin-left: 2rem; }
+
+.margin-two--right {
+  margin-right: 2rem; }
+
+.margin-two--bottom {
+  margin-bottom: 2rem; }
+
+.margin-two--top {
+  margin-top: 2rem; }
+
+.margin-three--all {
+  margin: 3rem; }
+
+.margin-three--sides {
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+.margin-three--ends {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.margin-three--left {
+  margin-left: 3rem; }
+
+.margin-three--right {
+  margin-right: 3rem; }
+
+.margin-three--bottom {
+  margin-bottom: 3rem; }
+
+.margin-three--top {
+  margin-top: 3rem; }
+
+.margin-four--all {
+  margin: 4rem; }
+
+.margin-four--sides {
+  margin-left: 4rem;
+  margin-right: 4rem; }
+
+.margin-four--ends {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+
+.margin-four--left {
+  margin-left: 4rem; }
+
+.margin-four--right {
+  margin-right: 4rem; }
+
+.margin-four--bottom {
+  margin-bottom: 4rem; }
+
+.margin-four--top {
+  margin-top: 4rem; }
+
+.padding-one--all {
+  padding: 1rem; }
+
+.padding-one--sides {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.padding-one--ends {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.padding-one--left {
+  padding-left: 1rem; }
+
+.padding-one--right {
+  padding-right: 1rem; }
+
+.padding-one--bottom {
+  padding-bottom: 1rem; }
+
+.padding-one--top {
+  padding-top: 1rem; }
+
+.padding-one-and-half--all {
+  padding: 1.5rem; }
+
+.padding-one-and-half--sides {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+.padding-one-and-half--ends {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
+.padding-one-and-half--left {
+  padding-left: 1.5rem; }
+
+.padding-one-and-half--right {
+  padding-right: 1.5rem; }
+
+.padding-one-and-half--bottom {
+  padding-bottom: 1.5rem; }
+
+.padding-one-and-half--top {
+  padding-top: 1.5rem; }
+
+.padding-two--all {
+  padding: 2rem; }
+
+.padding-two--sides {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.padding-two--ends {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.padding-two--left {
+  padding-left: 2rem; }
+
+.padding-two--right {
+  padding-right: 2rem; }
+
+.padding-two--bottom {
+  padding-bottom: 2rem; }
+
+.padding-two--top {
+  padding-top: 2rem; }
+
+.padding-three--all {
+  padding: 3rem; }
+
+.padding-three--sides {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.padding-three--ends {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.padding-three--left {
+  padding-left: 3rem; }
+
+.padding-three--right {
+  padding-right: 3rem; }
+
+.padding-three--bottom {
+  padding-bottom: 3rem; }
+
+.padding-three--top {
+  padding-top: 3rem; }
+
+.padding-four--all {
+  padding: 4rem; }
+
+.padding-four--sides {
+  padding-left: 4rem;
+  padding-right: 4rem; }
+
+.padding-four--ends {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.padding-four--left {
+  padding-left: 4rem; }
+
+.padding-four--right {
+  padding-right: 4rem; }
+
+.padding-four--bottom {
+  padding-bottom: 4rem; }
+
+.padding-four--top {
+  padding-top: 4rem; }
 
 footer {
   margin-top: 3rem;
-  color: #FFF;
   background: #16161E;
-  height: 5rem; }
+  height: 4.5rem; }
+  footer ul li {
+    display: inline;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    footer ul li a {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: white;
+      opacity: 0.7;
+      text-decoration: none;
+      position: relative;
+      -webkit-transition: opacity 0.2s;
+      -moz-transition: opacity 0.2s;
+      transition: opacity 0.2s; }
+      footer ul li a:hover {
+        color: #FFF;
+        opacity: 1; }
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -7.5rem; }
+  .page-wrap:after {
+    content: '';
+    display: block; }
+
+ul.home > li a {
+  display: block;
+  background: #FDFCFC;
+  box-shadow: inset 0 -1px 0 #F0F0F4;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s; }
+  ul.home > li a:hover {
+    background: #FFF;
+    cursor: pointer; }
+  ul.home > li a > ul li {
+    background: #CCC; }
 
 iframe {
   width: 100%;
@@ -173,7 +438,7 @@ iframe {
 
 html, body {
   font-family: sans-serif;
-  background: #FFF;
+  background: #F0F0F4;
   color: #111;
   font-family: 'Lora', sans-serif;
   font-weight: normal;
@@ -188,15 +453,15 @@ html {
 
 pre.prettyprint {
   font-family: 'Source Code Pro', monospace;
-  background: #F3F3F3;
-  padding: 20px;
+  background: #F0F0F4;
+  padding: 2rem;
   border: none;
-  margin-bottom: 40px; }
+  margin-bottom: 4rem; }
 
 .image-placement {
   background: #857C85;
   height: 250px;
-  margin-bottom: 40px; }
+  margin-bottom: 4rem; }
 
 .image-placement--hard {
   width: 500px; }
