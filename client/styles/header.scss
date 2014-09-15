@@ -1,0 +1,30 @@
+header {
+	height: $five;
+	background: $dark-gray;
+	margin-bottom: $three;
+
+	a {
+		font-family: $oswald;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: white;
+		opacity: 0.7;
+		text-decoration: none;
+		top: $one-and-half;
+		position: relative;
+		transition: opacity .2s;
+
+		&:hover {
+			color: white;
+			opacity: 1;
+		}
+	}
+
+	ul {
+		li {
+			display: inline;
+			padding-left: $one;
+
+		}
+	}
+}

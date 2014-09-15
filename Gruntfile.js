@@ -8,8 +8,11 @@ module.exports = function(grunt) {
 
     sass : {
       dist: {
+        options: {
+          includePaths: require('node-bourbon').includePaths
+        },
         files: {
-          'client/styles/style.css': 'client/styles/style.scss'
+          'client/style.css': 'client/styles/style.scss'
         }
       }
     }
@@ -18,7 +21,7 @@ module.exports = function(grunt) {
 
   // grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
 
   grunt.registerTask('default', [
   	'jshint',

@@ -1,47 +1,19 @@
-
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700);
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-html {
-	font-size: 12px;
-}
+@import 'bourbon';
+@import 'reset';
+@import 'sizing-mixins';
+@import 'color-mixins';
+@import 'typography-helpers';
+@import 'header';
+@import 'layout-helpers';
+@import 'footer';
+@import '../blog/blog';
 
 html, body {
 	font-family: sans-serif;
-	background: #FFF;
-	color: #111;
-	font-family:'Lora', sans-serif;
-	font-weight:normal;
+	background: $white;
+	color: $black;
+	font-family: $lora;
+	font-weight: normal;
 	height: 100%;
 }
 
@@ -50,214 +22,17 @@ body {
 	line-height: 2rem;
 }
 
-ol, ul {
-	list-style: none;
-}
-
-//////////////////////////
-///////*TYPOGRAPHY*///////
-//////////////////////////
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Oswald';
-	font-weight: 300;
-}
-
-h1 {
-	font-size: 3rem;
-	line-height: 3.5rem;
-	margin-bottom: 15px;
-}
-
-h2 {
-	font-size: 2.5rem;
-	line-height: 4rem;
-	margin-bottom: 10px;
-}
-
-h3 {
-	font-size: 2rem;
-	line-height: 3rem;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-p {
-	font-size: 1.5rem;
-	line-height: 2rem;
-	margin-bottom: 20px;
-}
-
-a {
-	color: black;
-
-	&:hover {
-		color: #FF0DFF;
-	}
-}
-
-ul {
-	margin-bottom: 40px;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.small {
-	font-size: 1.3rem;
-	line-height: 1.8rem;
-}
-
-.italic {
-	font-style: italic;
-}
-
-.gray {
-	color: #8E8989;
-}
-
-//////////////////////////
-/////////*LAYOUT*/////////
-//////////////////////////
-.full-wrapper {
-	height: 100%;
-}
-
-.full {
-	min-height: 100%;
-	border: 1px solid red;
-}
-
-.container {
-	width: 900px;
-	margin: 0 auto;
-}
-
-.row {
-	margin-bottom: 50px;
-}
-
-.clear-after:after {
-	content: '';
-	display: table;
-	clear: both;
-}
-
-.float-right {
-	float: right
-}
-
-.float-left {
-	float: left
-}
-
-.one-whole {
-	width: 100%;
-}
-
-.five-sixths {
-	 width: 84%;
-}
-
-.three-fourths {
-	width: 75%;
-	padding-left: 5%;
-}
-
-.two-thirds {
-	width: 66%;
-}
-
-.half {
-	width: 48%;
-	margin: 1%;
-}
-
-.third {
-	width: 31%;
-	margin: 1%;
-}
-
-.fourth {
-	width: 25%;
-}
-
-.sixth {
-	width: 16%
-}
-
-.two-column {
-	-moz-column-count: 2;
-	-webkit-column-count: 2;
-	column-count: 2;
-	-moz-column-gap: 20px;
-	-webkit-column-gap: 20px;
-	column-gap: 20px
-}
-
-.align-center {
-	margin-left:auto;
-	margin-right: auto;
-}
-
-.vert-align-center {
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-.margin-top-15 {
-	margin-top: 15px;
-}
-
-.padding-top-15 {
-	padding-top: 15px;
-}
-
-
-//////////////////////////
-//////////*NAV*///////////
-//////////////////////////
-
-nav{
-	width: 100%;
-	padding: 20px;
-	background: #CCC;
-	border-radius: 0 0 10px 10px;
-	margin-bottom: 50px;
-	position: absolute;
-	top: 0;
-
-	a {
-		text-decoration: none;
-		color: #000;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-size: 13px;
-		padding: 0 10px;
-	}
-
-	ul {
-		float: right;
-
-		li{
-			display: inline;
-
-		}
-
-	}
-
+// This sets the base px size for all rem units
+html {
+	font-size: 12px;
 }
 
 pre.prettyprint {
-	font-family: 'Source Code Pro', monospace;
-	background: #F3F3F3;
-	padding: 20px;
+	font-family: $source-code;
+	background: $light-gray;
+	padding: $two;
 	border: none;
-	margin-bottom: 40px;
+	margin-bottom: $four;
 }
 
 //////////////////////////
@@ -267,11 +42,9 @@ pre.prettyprint {
 .image-placement{
 	background: #857C85;
 	height: 250px;
-	margin-bottom: 40px;
+	margin-bottom: $four;
 }
 
 .image-placement--hard {
 	width: 500px
 }
-
-@import '../blog/blog';

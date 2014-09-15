@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+$oswald: 'Oswald', sans-serif;
+$lora: 'Lora', sans-serif;
+$source-code: 'Source Code Pro', monospace;
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $oswald;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: $three;
+	line-height: $three-and-half;
+	margin-bottom: $one-and-half;
+}
+
+h2 {
+	font-size: $two-and-half;
+	line-height: $four;
+	margin-bottom: $one;
+}
+
+h3 {
+	font-size: $two;
+	line-height: $three;
+	margin-top: $one;
+	margin-bottom: $one;
+}
+
+p {
+	font-size: $one-and-half;
+	line-height: $two;
+	margin-bottom: $two;
+}
+
+a {
+	color: $black;
+
+	&:hover {
+		color: $blue;
+	}
+}
+
+ul {
+	margin-bottom: $four;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.small {
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.gray {
+	color: $med-gray;
+}

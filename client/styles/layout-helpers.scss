@@ -1,0 +1,91 @@
+.full-wrapper {
+	height: 100%;
+}
+
+.full {
+	min-height: 100%;
+	border: 1px solid red;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.row {
+	margin-bottom: 50px;
+}
+
+.clear-after:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.float-right {
+	float: right
+}
+
+.float-left {
+	float: left
+}
+
+.one-whole {
+	width: 100%;
+}
+
+.five-sixths {
+	 width: 84%;
+}
+
+.three-fourths {
+	width: 75%;
+	padding-left: 5%;
+}
+
+.two-thirds {
+	width: 66%;
+}
+
+.half {
+	width: 48%;
+	margin: 1%;
+}
+
+.third {
+	width: 31%;
+	margin: 1%;
+}
+
+.fourth {
+	width: 25%;
+}
+
+.sixth {
+	width: 16%
+}
+
+.two-column {
+	@include columns(2 20px);
+}
+
+.align-center {
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.vert-align-center {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.margin-top-15 {
+	margin-top: 15px;
+}
+
+.padding-top-15 {
+	padding-top: 15px;
+}
