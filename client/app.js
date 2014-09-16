@@ -19,4 +19,6 @@ angular.module('portfolio', [
 			});
 
 		$urlRouterProvider.otherwise('/');
+
+		console.log('im getting activated')
 	});
