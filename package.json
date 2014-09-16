@@ -4,6 +4,7 @@
   "description": "Kelly Walker Portfolio",
   "dependencies": {},
   "devDependencies": {
+    "body-parser": "^1.8.1",
     "bower": "^1.3.3",
     "express": "^4.9.0",
     "grunt": "^0.4.5",

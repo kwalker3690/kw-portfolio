@@ -3,8 +3,12 @@ angular.module('portfolio.projects-services', [])
 .factory('ProjectData', function() {
 	var projects = [
 		{
+			name: 'Art Safari',
+			tags: ['javascript', 'angular', 'node', 'ionic', 'html', 'css', 'sass', 'personal']
+		},
+		{
 			name: 'Github Scout',
-			tags: ['javascript', 'angular', 'node', 'html', 'css', 'sass', 'personal']
+			tags: ['javascript', 'angular', 'node', 'express', 'html', 'css', 'sass', 'personal']
 		},
 		{
 			name: 'Inkling Store Product Details',
