@@ -1,0 +1,20 @@
+<div class="background">
+	<img ng-src='{{image}}' />
+</div>
+<div class="background">
+	<img ng-src='{{image}}' class="linear-blur" />
+</div>
+<svg height="0">
+	<defs>
+	  <mask id="mask-linear">
+	    <rect width="400" height="300" fill="url(#l1)"></rect>
+	    <linearGradient id="gradient" x1="0" y1="00%" x2 ="0" y2="100%">
+      <stop stop-color="black" offset="0"/>
+      <stop stop-color="white" offset="1"/>
+    </linearGradient>
+	  </mask>
+	  <filter id="filtre2">
+	    <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+	  </filter>
+	</defs>
+</svg>

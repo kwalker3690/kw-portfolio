@@ -10,6 +10,8 @@
 .container {
 	width: 900px;
 	margin: 0 auto;
+	z-index: 1;
+	position: relative;
 }
 
 .row {
@@ -88,6 +90,36 @@
 
 
 // Margin Helpers
+
+.margin-half--all {
+	margin: $half;
+}
+
+.margin-half--sides {
+	margin-left: $half;
+	margin-right: $half;
+}
+
+.margin-half--ends {
+	margin-top: $half;
+	margin-bottom: $half;
+}
+
+.margin-half--left {
+	margin-left: $half;
+}
+
+.margin-half--right {
+	margin-right: $half;
+}
+
+.margin-half--bottom {
+	margin-bottom: $half;
+}
+
+.margin-half--top {
+	margin-top: $half;
+}
 
 .margin-one--all {
 	margin: $one;
@@ -240,6 +272,37 @@
 }
 
 // Padding Helpers
+
+.padding-half--all {
+	padding: $half;
+}
+
+.padding-half--sides {
+	padding-left: $half;
+	padding-right: $half;
+}
+
+.padding-half--ends {
+	padding-top: $half;
+	padding-bottom: $half;
+}
+
+.padding-half--left {
+	padding-left: $half;
+}
+
+.padding-half--right {
+	padding-right: $half;
+}
+
+.padding-half--bottom {
+	padding-bottom: $half;
+}
+
+.padding-half--top {
+	padding-top: $half;
+}
+
 .padding-one--all {
 	padding: $one;
 }

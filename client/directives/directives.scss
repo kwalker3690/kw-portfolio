@@ -1,0 +1,7 @@
+.linear-blur{
+  @include filter(blur(12px));
+  -webkit-mask: -webkit-linear-gradient(transparent 0%, black);
+  -webkit-mask: linear-gradient(transparent 0%, black);
+  mask: url('#mask-linear');
+  filter: url('#filtre2');
+}

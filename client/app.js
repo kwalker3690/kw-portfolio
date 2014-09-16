@@ -1,6 +1,7 @@
 angular.module('portfolio', [
 	'portfolio.home',
 	'portfolio.projects',
+	'portfolio.directives',
 	'ui.router'
 	])
 
