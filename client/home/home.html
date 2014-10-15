@@ -5,12 +5,12 @@
 	<div class="container">
 		<ul>
 			<h1>Projects</h1>
-			<li ng-repeat="project in projects">
-				<a ui-sref="{{ project.name }}" class="padding-three--all clear-after margin-two--bottom">
-					<h2 class="float-left">{{ project.name }}</h2>
+			<li ng-repeat="aProject in projects">
+				<a ui-sref="project({projectName: aProject.url})" class="padding-three--all clear-after margin-two--bottom">
+					<h2 class="float-left">{{ aProject.name }}</h2>
 
 					<ul class="float-right inline-list margin-one--top">
-						<li ng-repeat="tag in project.tags" class="margin-half--sides small padding-half--sides">{{ tag }}</li>
+						<li ng-repeat="tag in aProject.tags" class="margin-half--sides small padding-half--sides">{{ tag }}</li>
 					</ul>
 				</a>
 			</li>

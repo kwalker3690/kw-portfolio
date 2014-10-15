@@ -2,6 +2,10 @@ footer {
 	margin-top: $three;
 	background: $dark-gray;
 	height: $four-and-half;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 
 	ul {
 
@@ -29,13 +33,3 @@ footer {
 	}
 }
 
-// Allow footer to be sticky to bottom of page
-.page-wrap {
-	min-height: 100%;
-	margin-bottom: -7.5rem;
-
-	&:after {
-		content: '';
-		display: block;
-	}
-}

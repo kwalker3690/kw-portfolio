@@ -1,0 +1,194 @@
+		<div class="style-guide full-wrapper">
+				<div class="full container">
+					<div class="vert-align-center container">
+						<div class="half align-center image-placement"></div>
+						<div>
+							<h1 class="text-center">Inkling for Web Style Guide</h1>
+							<div class="two-column">
+								<p>When I first started as a Product Designer at Inkling, Inkling’s web appearance was not unified across products and code bases. Years of design work by varying designers without a central style guide had left the Inkling brand in a confused state on the web.</p>
+								<p>Inkling’s consumer facing web products spanned across 3 different code bases, making it easy for styling to vary drastically without a central style guide.</p>
+								<p>I did an audit of Inkling’s styles and found that there was massive differences between the styling in these different code bases.</p>
+								<p>Some of Inkling’s web products styling also hadn’t been touched in multiple years, so they were overdue for a visual refresh.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<div class="half float-left">
+					<p>Here is a sampling of some of the varied styling across Inkling’s consumer facing web presence. Buttons, grids, links, iconography, everything is varied from each other.</p>
+					<p>The solution was to create and implement a visual style guide for Inkling’s consumer facing web presence.</p>
+					<p>This coincided nicely with another initiative that was occuring at the time: Tom Genoni’s refactoring of the Inkling web store’s CSS code.</p>
+					<p>This provided me a great opportunity to pull together the web visual styling into a language that was unique to Inkling, as well as visually update those products that had been put on the backburner.</p>
+					<p>So I took a look at all of our different web appearances and thought about how to join them into one visual presence.</p>
+				</div>
+				<div class="half float-right image-placement"></div>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>I started off with buttons, one of the most controversial elements on our web pages. I took a look at our button styling across not only our existing web pages but also across our other products, like our newly designed Android app and our authoring platform, Habitat. Working with the other product designers as well as communication designers, we came up with a few options that we all agreed could be good forward moving solutions. So we A/B tested them (using Optimizely!) to get some good data to back up our design decision. A flat button with all caps styling performed the best, so I added it to the style guide.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>Here is the final spec I made for the button styles. I created a space in our company dropbox in which these various specs were stored so that designers and engineers alike could access them as needed and find out which classes corresponded to which styles, as well as the exact details of those styles.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>Here are the results of the style guide. (talk about how they look more alike)</p>
+				<p>Implemented by Tom and myself, Tom as I said was refactoring the store CSS so I worked with him to get my visual styling changes in. I implemented all of the changes to the CSS in our Reader.</p>
+			</div>
+		</div>
+
+		<div class="whitelabel full-wrapper">
+			<div class="full container">
+				<h1>Whitelabeling the Inkling Store</h1>
+				<p>Inkling partnered with Elsevier, a textbook company that has a large set of medical resources. Elsevier wanted Inkling to produce and sell textbooks for two of their products, Expert Consult and Student Consult.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>These two products were already existing websites where users could access PDF versions of their print books. Elsevier wanted to upgrade these users’ experience by bringing them over to the Inkling platform. However they wanted also to maintain a separate environment for these users, an Expert/Student consult that was powered by Inkling.</p>
+				<p>The solution they concluded upon was to whitelabel our Inkling Store and reader.</p>
+				<p>Using our Inkling Store code base, we set up separate instances at expertconsult.inkling.com and studentconsult.inkling.com. These all fed from the same front end and back end, with some minor changes to the code to enable what are essentially sibling sites.</p>
+				<p>As a product designer, I was tasked to design these new sites. There were some major constraints placed on us based in the fact that they would rely on most of the same HTML and CSS as our site. So any major design changes to the store had to be considered across all three instances of the store.</p>
+				<p>Explored how to translate our new visual language to incorporate another brand</p>
+				<p>Balanced maintaining Inkling’s brand identity while making the site unique to Expert and Student Consult</p>
+				<p>Created a UX to easily move > 1 mil users through our migration flow</p>
+				<p>Implemented the HTML and SASS changes necessary for these designs</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>Explored how to translate our new visual language to incorporate another brand (Buttons, blocks)</p>
+				<p>Balanced maintaining Inkling’s brand identity while making the site unique to Expert and Student Consult(Typography, logo (worked with communication design), theming)</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>The very tricky part of this whole project was the initial migration, bringing over 1 million users onto a new platform. We wanted to make this as smooth of a transition for them as possible, leaving them with little to no questions about what was happening to them, their accounts, and their eBooks.</p>
+				<p>Many ways to do this, and we thought through all of them. We decided upon sending an email out to all of the existing users with a link to set their password. Then we needed to send them to a page where they set their password for their account. From there we took them to their library, from where they could read their books on the web or download a native app to read.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>The set password page was a page of great importance. A lot of users could drop off here if we didn’t make it clear to them what was happening or if they lost trust in us.</p>
+				<p>So we wanted to make it very clear to the users that their entire library had been transferred over to this new platform, and that they had not lost any books. </p>
+				<p>We also wanted to get across why they had to go through this process, what they would be getting out of it by having their books on Inkling (ie the interactivity, mobile access, etc). </p>
+				<p>So I did a lot of explorations of this specific migration page, balancing getting them through the migration flow by setting their password with explaining what was going on.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>Here is the final product for that specific page. After looking at some very complex options that had a lot of information about Inkling packed into the page, I decided that it was best to get the users through this page so that they could explore their books once they got out the other side. But this page still holds a few very refined key elements. On the left, there is a large explanatory statement of what is happening, underneath the user’s name, which instills trust. Then we explain that the eBooks they had before will be available on this site. Then we give them the option to go to our features page to find out more about our platform. On the right, there is a very simplified form. The user’s email is bolded at the top, connecting them to the email that they just came from. Then just a few actions takes them into their library, where their books are waiting, as well as a welcome message that explains more about our native apps and our other features.</p>
+				<p>This turned out to be a very successful flow, our support tickets did not spike dramatically and we were able to migrate a large portion of their users in the first few days this email was sent out.</p>
+				<p>There were also fail safe plans, as a lot of people do not look at these kind of emails. We implemented various other migration prompts for wherever the users were entering the site.</p>
+			</div>
+		</div>
+
+		<div class="product-details full-wrapper">
+			<div class="full container">
+				<h1>Redesigning the Product Details Page</h1>
+				<p>Our product details page is our hook, its where we get people interested in individual books and hopefully convert them to purchase. Our conversion rates were pretty terribly low however, so we made it a goal to raise them over the course of one quarter. We focused on revamping our product details page to drastically increase our conversion rates to purchase.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>Here is our original PDP, (talk about why it’s shitty)</p>
+				<p>We began by thinking about how and why users entered our site. We distilled it down to two main types of users: the casual user and the specific user. The casual user is someone who has been told that Inkling has interesting books and just wants to check out what’s available. They are very much in a browsing mode. When they get to a product details page of a title that piques their interest, they are looking for further information such as what is this book about, why should I buy it on Inkling, what does it look like inside, what did other people think about this book? The specific user is someone looking for a certain book. They may have found Inkling through a google search, in which they probably know nothing about it as a platform, or they may have been reccommended Inkling or have used it before. In either case, we found we needed to be telling the user a lot more about each book and about Inkling as a whole to help them make a purchase decision.</p>
+				<p>We did a series of sprints to come up with the new design. Each sprint took place over two weeks. The first three days we booked a room for ourselves and did a deep dive into our users and their needs.The rest of the two weeks was spent refining and implementing.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<h2>Sprint 1: Initial Outline</h2>
+				<p>Before we could focus too much on adding information to the page, we wanted to make sure we had a good base page layout to work with. The existing PDP had a lot of unuseful white space, as well as a visual style that fell short of our other products. We reorganized the existing information on the page to take more advantage of above the fold space. </p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>We came up with two potential solutions that we tested on users. In user testing, we presented these at actual size on the browser to users. Invariably they preferred the left option, the more packed option. Users felt as though this had more information for them to make a purchase decision with, when in reality they both had exactly the same information on it, but the left had all of the informaiton above the fold and close to the purchase button.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>Another piece of this project was my continual efforts to bring our product’s visual designs closer together. The blurred background follows a design pattern another product designer began in our Android app. I was constantly looking for ways to use small design elements from our various products so that our products will visually appear as a cohesive suite.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<h2>Sprint 2: Differentitation</h2>
+				<p>In our user testing, we found time and time again that people would arrive upon the PDP and have no idea what they were looking at. They had trouble figuring out that it was an eBook, let alone that it was an eBook with enhanced features.</p>
+				<p>And in fact, Inkling books were on average a tad more expensive than their Kindle counterparts. So users would come to this page and have no idea why they would want to spend more on Inkling when they could buy it on Amazon. (user testing story)</p>
+				<p>So we set out on another sprint to add elements of differentiation to our page, things that would tell a user what made Inkling books different and worth extra money.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>We began this sprint by looking at a list of answers to a questionnaire our marketing team had placed on our purchase confirmation page, that asked users why did they purchase the Inkling book. Top answers were: the interactive features, particularly the videos and questionnaires, as well as in-book search and the ability to have the book offline on their mobile device. Then we did some further user testing on this topic, asking users what made them want to purchase an eBook from anywhere, not just from Inkling. From this we learned that people were more likely to purchase if they knew it was a book that was popular with peers in their field. We also learned that they relied on brand recognition, so if medical users saw the logo of an academic institution that they respected or if travel users saw the logo of a well known travel book brand they would be more likely to purchase. We took all of those learnings and came up with multiple different messaging and layouts to A/B test, to see which would increase purchase conversion rate.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<h2>Sprint 3: Content Sampling</h2>
+				<p>In our user testing, we asked users what they look at when they are making purchasing decisions. The answers varied, but often centered around the same idea: getting to peek inside the book to see what the content was like. We figured out ways to enable them to generically sample the content, you know, allow them to see the first chapter of the book, allow them to get a free chapter of the book, etc. But in many cases this doesn’t give the best impression of what the book is about or its content. So after a day of intense brainstorming on a whiteboard, sketching out many many different ideas, I came up with the idea of tailoring the sampling to the type of book.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>Inkling best selling books fall into a few main categories. Top categories were medical, cookbooks, and travel books. Each of these have a pretty drastically different type of content from each other. I realized that the best way to explain the benefit of these books was to show off their best content. I designed a system for our marketing team to be able to highlight the top content from each book, which recipes were the most delicious or which maps in a travel book had the best details. This allowed us to not only show off the content, but also the interactivity of the books, without the user having to even leave the product details page. This was a feature that was meant to feel very curated, a special touch added to our best selling books. For our other books they could still decipher information about the book from the table of contents list and by previewing a free sample/chapter.</p>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>So compiling all of those sprints together we came up with this very lengthy page that held a TON more information that helps users make purchase decisions, as well as was visually more in sync with our other products.</p>
+			</div>
+		</div>
+
+		<div class="wedding full-wrapper">
+			<div class="full container">
+				<h1>Sally and Joey's Wedding Website</h1>
+			</div>
+		</div>
+
+		<div class="full-wrapper">
+			<div class="full container">
+				<p>Earlier this year I designed and implemented the website for my friend’s wedding. This was a chance for me to just totally have fun with visual design, so I decided to create one long scrolling page with parallax background images. This allowed me to work on my javascript skills, incorporating and manipulating some javascript plugins and libraries. The visual design incorporates some classic wedding site elements like swirling web fonts, but gets modernized by flat buttons and a little trendy parallax. It’s built with hand coded HTML, SASS, and javascript plugins.</p>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<ul>
+			<li><a href="mailto:walkerkellywalker@gmail.com">Email</a></li>
+			<li>-</li>
+			<li><a href="https://twitter.com/kwalker3690">Twitter</a></li>
+			<li>-</li>
+			<li><a href="http://dribbble.com/kelly_walker">Dribbble</a></li>
+		</ul>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="portfolio">
+<head>
+	<title>Kelly Walker | Designer & Developer</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+<body>
+	<div class="page-wrap">
+		<header class="clear-after one-whole">
+			<div class="container">
+				<div class="float-left">
+					<a href="/">Kelly Walker</a>
+				</div>
+				<div class="float-right">
+					<ul>
+						<li><a href="/">Projects</a></li>
+						<li><a href="/">Blog</a></li>
+						<li><a href="/">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+	<div class="container clear-after">
+	<div class="fourth float-left">
+		<h1>Setting Up Sass Files</h1>
+		<p class="small gray">September 23, 2014</p>
+		<!-- <p class="italic small gray">This is a series aimed at developers who have little knowledge of design principles, but want to add a little extra pizazz to their sites. The tips given are based off of current web design trends and should make anyone who looks at your site go "Holy F*** you've got style"</p> -->
+	</div>
+
+	<div class="three-fourths float-right">
+		<p><a href="http://sass-lang.com/">Sass</a> is an amazing CSS preprocessor. It lets you write CSS quickly and in an amazingly modular fashion. It helps you cut down the amount of CSS you have to write by letting you make variables and even functions to come up with reusable CSS. It's super easy to learn, I highly recommend checking out <a href="http://sass-lang.com/guide">their introduction</a> to get started.</p>
+
+		<p>Now that you've got the basics covered, let's talk about setting up your Sass files. Sass's core benefit is their modularity, and the file structure should reflect that modularity. I'll go over a few different possibilities of how to set up your files, depending on the size of your site or app and how your entire codebase is set up.</p>
+
+		<h2>Small to Medium Sites or Apps</h2>
+		<p>I'm going to use my website as the example here. Here is an overview of my files structure:</p>
+		<ul>
+			<li>Files</li>
+		</ul>
+
+		<p>My Sass is divided up into two major sections: a styles folder, which contains styles that are used throughout the entire site, and individual page Sass files, which contain styles that are specific to only those pages.</p>
+
+		<h3>The Styles Folder</h3>
+		<p>The styles folder contains the main meat of our Sass. First let's take a look at <a href="">reset.scss</a>. I include this because browsers tend to try to implement styles for me, so this resets the styling back to zero. This helps out with cross browser styling issues as well. <a href="http://stackoverflow.com/questions/11578819/css-reset-what-exactly-does-it-do">(See this stack overflow article for more information)</a></p>
+
+		<p>I also have created files for the header and footer styling. You guessed it, these contain styling specific to the header and footer, respectively. Not too much to talk about here.</p>
+
+		<p>Let's chat about variables. Variables are one of the awesome features of Sass. They allow you to reuse styles in multiple places without having to write the same CSS over and over again. This also helps provide consistency to your styles, just set and forget your base styles, and reuse them everywhere. I created two variable files: <a href="">color-variables.scss</a> and <a href="">sizing-variables.scss</a>. These are elements that I will reuse a TON, so they are very key to have variables for. Throughout the rest of my Sass, I no longer write any new colors or sizes, I only use the ones included in here to maintain consistency.</p>
+
+		<p>There are two files here labeled as "helpers"....</p>
+
+		<p>Finally, we import everything into <a href="">style.scss</a> to bring all these styles together. (There are also a few loose ends styles included in there, styles that apply to the overall applicaiton).</p>
+
+		<!-- <h2>Huge Web Apps</h2>
+		<p></p> -->
+	</div>
+	</div>
+</body>
+</html>

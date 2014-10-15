@@ -13,8 +13,10 @@ angular.module('portfolio', [
 				controller: 'HomeController'
 			})
 			.state('project', {
-				url: '/project',
-				templateUrl: 'project/project.html',
+				url: '/project/:projectName',
+				templateUrl: function($stateParams) {
+					return '/project/projectTemplates/'  + $stateParams.projectName + '.html'
+				},
 				controller: 'ProjectController'
 			});
 

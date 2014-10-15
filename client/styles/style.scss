@@ -1,7 +1,7 @@
 @import 'bourbon';
 @import 'reset';
-@import 'sizing-mixins';
-@import 'color-mixins';
+@import 'sizing-variables';
+@import 'color-variables';
 @import 'typography-helpers';
 @import 'header';
 @import 'layout-helpers';
@@ -18,18 +18,24 @@ html, body {
 	color: $black;
 	font-family: $lora;
 	font-weight: normal;
-	height: 100%;
+}
+
+html {
+	// This sets the base px size for all rem units
+	font-size: 12px;
+	position: relative;
+	min-height: 100%;
 }
 
 body {
 	font-size: 1.5rem;
 	line-height: 2rem;
+	margin: 0 0 5rem;
 }
 
-// This sets the base px size for all rem units
-html {
-	font-size: 12px;
-}
+// div {
+// 	position: relative;
+// }
 
 pre.prettyprint {
 	font-family: $source-code;
