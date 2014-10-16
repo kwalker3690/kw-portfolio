@@ -1,17 +1,25 @@
 @import 'bourbon';
 @import 'susy';
-@import 'reset';
-@import 'sizing-variables';
-@import 'color-variables';
-@import 'typography-helpers';
-@import 'header';
-@import 'layout-helpers';
-@import 'footer';
+
+// Global styles
+@import 'globals/reset';
+@import 'globals/sizing-variables';
+@import 'globals/color-variables';
+@import 'globals/typography-helpers';
+@import 'globals/layout-helpers';
+
+// Component SASS
+@import 'components/header';
+@import 'components/footer';
+@import 'components/background-full';
+@import 'components/breadcrumb';
 
 // File specific SASS
+@import '../project/project-templates';
 @import '../directives/directives';
 @import '../home/home';
 @import '../blog/blog';
+
 
 html, body {
 	font-family: sans-serif;
@@ -34,16 +42,27 @@ body {
 	margin: 0 0 5rem;
 }
 
-// div {
-// 	position: relative;
-// }
-
 pre.prettyprint {
 	font-family: $source-code;
 	background: $light-gray;
 	padding: $two;
 	border: none;
 	margin-bottom: $four;
+}
+
+
+.category {
+	h1 {
+		color: $light-gray;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 180px;
+		line-height: 109px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		@include transform(translateX(-50%))
+	}
 }
 
 //////////////////////////

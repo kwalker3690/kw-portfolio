@@ -10,6 +10,11 @@ $susy: (
 	position: relative;
 }
 
+// Large margin to not have content overlap background images
+.container-first {
+	margin-top: 525px;
+}
+
 .row {
 	margin-bottom: $three;
 }
