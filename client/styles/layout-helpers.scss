@@ -11,7 +11,7 @@ $susy: (
 }
 
 .row {
-	margin-bottom: $five;
+	margin-bottom: $three;
 }
 
 .inline-list li{
@@ -36,7 +36,7 @@ $susy: (
 // Grid widths
 
 .one-whole {
-	@include span(12)
+	width: 100%
 }
 
 .five-sixths {

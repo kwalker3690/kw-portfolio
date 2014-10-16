@@ -1,1 +1,5 @@
-<h1>I'm Project!</h1>
+<div class="container row">
+	<a ui-sref="home">Projects</a> > {{template.name}}
+</div>
+
+<div ng-include="'project/projectTemplates/' + template.url + '.html'"></div>
