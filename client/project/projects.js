@@ -10,9 +10,31 @@ angular.module('portfolio.projects', [
 	}
 
 	// Get name of project for breadcrumb
-	ProjectData.forEach(function(value, index) {
+	ProjectData.forEach(function(value, index, array) {
 		if($stateParams.projectUrl === value.url) {
-			$scope.template.name = value.name
+			$scope.template.name = value.name;
+
+			// If there is a previous project, set the url and name for pagination
+			if(array[index+1]) {
+				$scope.previousProject = {
+					url: array[index+1].url,
+					name: array[index+1].name
+				};
+			// otherwise hide the previous pagination
+			} else {
+				$scope.previousProject = false
+			}
+
+			// Same as above but for next project
+			if(array[index-1]) {
+				$scope.nextProject = {
+					url: array[index-1].url,
+					name: array[index-1].name
+				}
+			} else {
+				$scope.nextProject = false
+			}
+
 		}
 	})
 

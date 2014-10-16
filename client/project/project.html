@@ -3,3 +3,8 @@
 </div>
 
 <div ng-include="'project/projectTemplates/' + template.url + '.html'"></div>
+
+<div class="container row">
+	<p class="float-left"><a ui-sref="project({projectUrl: previousProject.url})" ng-show="previousProject">Previous: {{ previousProject.name }}</a></p>
+	<p class="float-right"><a ui-sref="project({projectUrl: nextProject.url})" ng-show="nextProject">Next: {{ nextProject.name }}</a></p>
+</div>
