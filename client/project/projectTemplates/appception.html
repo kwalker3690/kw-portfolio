@@ -1,1 +1,25 @@
-<div><h1>Appception</h1></div>
+<div class="full-wrapper">
+	<div class="full container">
+		<h1>Appception</h1>
+		<a href="http://appception.azurewebsites.net/">link to site</a>
+		<a href="https://github.com/kwalker3690/appception">link to github</a>
+		<p>Our final project at Hack Reactor was a group project done over four weeks. As we brainstormed in our group of 3 what we might work on, I thought back to the struggles I had getting started with programming. A lot of them revolved around finding Git a bit complicated and being intimidated by the terminal. I also struggled a lot with setting up file structures properly. So we decided we wanted to create a product that would help newer developers set up their projects and connect them with a nice interface to Git. Thus was born Appception, a web app that creates web apps.</p>
+
+		[PROJECTS SCREEN]
+		<p>With Appception, users can sign in with Github. From there, they can either edit one of their existing Github repos or create a new project.</p>
+
+		[NEW PROJECT SCREEN]
+		<p>To create a new project, they simply enter a name and choose from one of our generators. We set up many different generators, some from <a href="http://yeoman.io/">Yeoman</a> scaffolds, some from other web frameworks. Creating a new project uses the Github API to instantiate a new repo on their Github account, and add the files from the generator they chose to their account. There is also a branch added to their repo that allows the site to be automatically deployed to either Github Pages or Heroku. Once that process is complete, the user is navigated to the file editor to start working on their project.</p>
+
+		[FILE EDITOR]
+		<p>We integrated the <a href="https://github.com/adobe/brackets">Adobe Brackets</a> file editor into our application. At first we struggled with trying to integrate the editor because even though it is made in HTML, CSS, and Javascript, it is currently only made for desktop use. After trying to integrate it ourselves, we did some research and found that Mozilla has made a wrapper for Brackets called <a href="https://github.com/mozilla/nimble">Nimble</a>, rendering Brackets web ready. We were able to successfully hook up our existing code that integrated with Github to the editor. Users can make changes to their code, save them, and commit those changes to their Github repo. Those changes will also be pushed to their deployment branch and they can navigate to a static url provided by either Github pages or Heroku to see their code rendered.</p>
+
+		[NODE CODE SNIPPET]
+		<p>This was a really fun project for me to work on, not only because it was a product that I actually want to use, but because of the technologies I got to work with. I wrote most of the front end code in Angular, and did all the design and styling, implementing that in Stylus. I also set up many of the interactions with the Github API in our Node server. On the backend, I learned a ton about how to work with Node asynchronicity and how to work with reading and writing to large sets of flexible file structures.</p>
+
+		[RECURSIVE DIRECTIVES SNIPPET & OUTPUT]
+		<p>One of my favorite aspects of my front end Angular work was the recursive directives I set up. I wanted to display to users the file structure of the generators they could pick on the new repo page. To do this, I set up two directives that recursively build up a file structure based on a JSON input by checking to see whether each level of the JSON has children or not; if there are children, it is a folder that needs to be recursed upon, if not, it is a file.</p>
+
+		<p>Try out <a href="http://appception.azurewebsites.net/">Appception</a> for yourself and see if it helps improve your workflow!</p>
+	</div>
+</div>

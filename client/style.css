@@ -84,13 +84,6 @@ header {
     display: inline;
     padding-left: 1rem; }
 
-.full-wrapper {
-  height: 100%; }
-
-.full {
-  min-height: 100%;
-  border: 1px solid red; }
-
 .container {
   width: 900px;
   margin: 0 auto;

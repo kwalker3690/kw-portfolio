@@ -18,13 +18,23 @@ angular.module('portfolio.projects-services', [])
 			tags: ['javascript', 'angular', 'node', 'express', 'html', 'css', 'sass', 'personal']
 		},
 		{
+			name: 'New York Times Visual Search',
+			url: 'news-search',
+			tags: ['javascript', 'angular', 'node', 'express', 'html', 'css', 'sass', 'personal']
+		},
+		{
 			name: 'Wedding Website',
 			url: 'sally-joey-wedding',
 			tags: ['ux', 'ui', 'html', 'css', 'sass', 'personal']
 		},
 		{
-			name: 'Elsevier Inkling Whitelabel',
+			name: "Inkling's Whitelabeled Store for Elsevier",
 			url: 'inkling-elsevier-whitelabel',
+			tags: ['ux', 'ui', 'user testing', 'html', 'css', 'sass', 'professional']
+		},
+		{
+			name: "Migration of Elsevier Users to Inkling",
+			url: 'inkling-elsevier-migration',
 			tags: ['ux', 'ui', 'user testing', 'html', 'css', 'sass', 'professional']
 		},
 		{
