@@ -23,4 +23,11 @@ angular.module('portfolio', [
 		$urlRouterProvider.otherwise('/');
 
 		console.log('im getting activated')
-	});
+	})
+
+	.run(function ($rootScope, $window) {
+    // Fix UI router scrolling issue
+    $rootScope.$on('$viewContentLoaded', function () {
+      window.scrollTo(0, 0);
+    });
+  });
