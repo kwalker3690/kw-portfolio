@@ -9,7 +9,9 @@ module.exports = function(grunt) {
     sass : {
       dist: {
         options: {
-          includePaths: require('node-bourbon').includePaths
+          loadPath: require('node-bourbon').includePaths,
+          style: 'expanded',
+          require: 'susy'
         },
         files: {
           'client/style.css': 'client/styles/style.scss'
@@ -34,7 +36,7 @@ module.exports = function(grunt) {
 
   // grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-nodemon');
 

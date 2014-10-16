@@ -1,16 +1,12 @@
-// .full-wrapper {
-// 	height: 100%;
-// }
 
-// .full {
-// 	min-height: 100%;
-// 	border: 1px solid red;
-// }
+// Susy setup
+$susy: (
+	columns: 12,
+	global-box-sizing: border-box
+);
 
 .container {
-	width: 900px;
-	margin: 0 auto;
-	z-index: 1;
+	@include container(900px);
 	position: relative;
 }
 
@@ -22,6 +18,7 @@
 	display: inline
 }
 
+.row:after,
 .clear-after:after {
 	content: '';
 	display: table;
@@ -39,38 +36,63 @@
 // Grid widths
 
 .one-whole {
-	width: 100%;
+	@include span(12)
 }
 
 .five-sixths {
-	 width: 84%;
+	@include span(10)
+}
+
+.five-sixths--last {
+	@include span(10 last)
 }
 
 .three-fourths {
-	width: 75%;
-	padding-left: 5%;
+	@include span(9)
+}
+
+.three-fourths--last {
+	@include span(9 last)
 }
 
 .two-thirds {
-	width: 66%;
+	@include span(8)
+}
+
+.two-thirds--last {
+	@include span(8 last)
 }
 
 .half {
-	width: 48%;
-	margin: 1%;
+	@include span(6)
+}
+
+.half--last {
+	@include span(6 last)
 }
 
 .third {
-	width: 31%;
-	margin: 1%;
+	@include span(4)
+}
+
+.third--last {
+	@include span(4 last)
 }
 
 .fourth {
-	width: 25%;
+	@include span(3)
+}
+
+.fourth--last {
+	@include span(3 last)
 }
 
 .sixth {
-	width: 16%
+	@include span(2)
+}
+
+.sixth--last {
+	@include span(2 last)
 }
 
 .two-column {
