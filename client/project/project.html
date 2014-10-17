@@ -1,6 +1,8 @@
 <div ng-class="template.url">
 	<div class="container row">
-		<a ui-sref="home">Projects</a> > {{template.name}}
+		<div class=" bread-crumb">
+			<a ui-sref="home">Projects</a> > {{template.name}}
+		</div>
 	</div>
 
 	<div ng-include="'project/projectTemplates/' + template.url + '.html'"></div>

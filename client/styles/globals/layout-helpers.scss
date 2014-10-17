@@ -23,6 +23,7 @@ $susy: (
 	display: inline
 }
 
+.container:after,
 .row:after,
 .clear-after:after {
 	content: '';
