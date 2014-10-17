@@ -663,6 +663,8 @@ footer ul li a:hover {
   z-index: 0;
   top: 5rem;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: #8E8989;
 }
 .background .background--overlay {
@@ -700,7 +702,7 @@ footer ul li a:hover {
 }
 
 .home .background {
-  background: url("../images/hero2.jpg") no-repeat center center;
+  background-image: url("../images/hero2.jpg");
 }
 .home ul > li a {
   display: block;
