@@ -104,30 +104,30 @@
 		<div class="row">
 			<div class="half">
 				<ul>
-					<li ng-repeat="image in dropbox" >
-						<a ng-click="openLightboxModal('dropbox', $index)" class="float-left margin-one--right">
+					<li ng-repeat="image in dropbox" class="half-image" >
+						<a ng-click="openLightboxModal('dropbox', $index)">
 							<img ng-src="{{image.thumbUrl}}"class="thumbnail">
 						</a>
 					</li>
 				</ul>
 			</div>
-			<div class="half">
+			<div class="half margin-five--top padding-five--top">
 				<p>I created a space in our company Dropbox in which these various specs were stored in Photoshop and Illustrator documents so that designers could easily create mocks with our components. These were also included in a HTML/CSS style guide provided to our engineers for implementing our designer's mockups.</p>
 			</div>
 		</div>
 
 		<div class="row">
-			<ul>
-				<li ng-repeat="image in final" class="third-image">
+			<ul class="three-images">
+				<li ng-repeat="image in final">
 					<a ng-click="openLightboxModal('final', $index)">
-						<img ng-src="{{image.thumbUrl}}" class="thumbnail">
+						<img ng-src="{{image.thumbUrl}}">
 					</a>
 				</li>
 			</ul>
 		</div>
 
 		<div class="row">
-			<p>Above are the results of the updates after the style guide was complete. I implemented all of the changes to the CSS in our Reader (bottom right), and worked with developers to include the changes in our Store (left and top right).</p>
+			<p>Above are the results of the updates after the style guide was complete. I implemented all of the changes to the CSS in our Reader (right), and worked with developers to include the changes in our Store (left and center).</p>
 		</div>
 	</div>
 </div>

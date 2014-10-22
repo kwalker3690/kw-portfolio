@@ -49,16 +49,16 @@ angular.module('portfolio.projects')
 
 		$scope.final = [
 			{
+				'url': 'project/projectTemplates/inkling-style-guide/images/open-inkling-final-full.jpg',
+				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/open-inkling-final-thumb.jpg'
+			},
+			{
 				'url': 'project/projectTemplates/inkling-style-guide/images/homepage-full.jpg',
 				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/homepage-thumb.jpg'
 			},
 			{
 				'url': 'project/projectTemplates/inkling-style-guide/images/reader-final-full.jpg',
 				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/reader-final-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/open-inkling-final-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/open-inkling-final-thumb.jpg'
 			}
 		];
 

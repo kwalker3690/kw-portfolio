@@ -16,6 +16,7 @@
 @import 'components/breadcrumb';
 @import 'components/bootstrap-modal';
 @import 'components/tag';
+@import 'components/three-images';
 
 // File specific SASS
 @import '../project/project-templates';
@@ -55,6 +56,10 @@ pre.prettyprint {
 
 img {
 	width: 100%;
+}
+
+img.retina {
+	width: 50%
 }
 
 .category {
