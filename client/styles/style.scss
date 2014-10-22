@@ -7,12 +7,15 @@
 @import 'globals/color-variables';
 @import 'globals/typography-helpers';
 @import 'globals/layout-helpers';
+@import 'globals/grid';
 
 // Component SASS
 @import 'components/header';
 @import 'components/footer';
 @import 'components/background-full';
 @import 'components/breadcrumb';
+@import 'components/bootstrap-modal';
+@import 'components/tag';
 
 // File specific SASS
 @import '../project/project-templates';
@@ -50,6 +53,9 @@ pre.prettyprint {
 	margin-bottom: $four;
 }
 
+img {
+	width: 100%;
+}
 
 .category {
 	h1 {
@@ -59,6 +65,11 @@ pre.prettyprint {
 		font-size: 180px;
 		line-height: 109px;
 	}
+}
+
+hr {
+	border-top: 1px solid rgba(31, 24, 103, 0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 //////////////////////////

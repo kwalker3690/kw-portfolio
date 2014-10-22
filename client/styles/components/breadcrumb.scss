@@ -1,4 +1,23 @@
 .bread-crumb {
 	position: absolute;
-	z-index: 1
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+
+	.bread-crumb--inner{
+		position: absolute;
+		z-index: 1;
+		background: $black;
+		color: $white;
+		padding: 5px 15px;
+
+		a {
+			color: $white;
+
+			&:hover {
+				color: $blue
+			}
+		}
+	}
 }

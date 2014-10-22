@@ -3,20 +3,23 @@
 		<div class="title">
 			<h1>Projects</h1>
 		</div>
+		<p>image with code and phone goes here</p>
 		<div class="background--overlay"></div>
 	</div>
 	<div class="container container-first">
-		<ul>
-			<li ng-repeat="aProject in projects">
-				<a ui-sref="project({projectUrl: aProject.url})" class="padding-three--all clear-after margin-two--bottom">
-					<h2 class="float-left">{{ aProject.name }}</h2>
+		<div class="row">
+			<ul>
+				<li ng-repeat="aProject in projects">
+					<a ui-sref="project({projectUrl: aProject.url})" class="padding-three--all clear-after margin-two--bottom">
+						<h2 class="float-left">{{ aProject.name }}</h2>
 
-					<ul class="float-right inline-list margin-one--top">
-						<li ng-repeat="tag in aProject.tags" class="margin-half--sides small padding-half--sides">{{ tag }}</li>
-					</ul>
-				</a>
-			</li>
-		</ul>
+						<ul class="float-right inline-list margin-one--top">
+							<li ng-repeat="tag in aProject.tags" class="tag">{{ tag }}</li>
+						</ul>
+					</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 </div>

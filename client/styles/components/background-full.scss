@@ -25,12 +25,14 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
 		z-index: 2;
 
-		// h1 {
-		// 	left: 50%;
-		// 	@include transform(translateX(-50%));
-		// }
+		h1 {
+			padding: $one-and-half;
+			margin-bottom: 0;
+		}
 	}
 
 

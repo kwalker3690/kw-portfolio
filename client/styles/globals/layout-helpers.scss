@@ -6,7 +6,7 @@ $susy: (
 );
 
 .container {
-	@include container(900px);
+	@include container(1400px);
 	position: relative;
 }
 
@@ -16,11 +16,12 @@ $susy: (
 }
 
 .row {
-	margin-bottom: $three;
+	padding-top: $four;
+	margin-bottom: $four;
 }
 
 .inline-list li{
-	display: inline
+	display: inline-block
 }
 
 .container:after,
@@ -49,7 +50,7 @@ $susy: (
 	@include span(10)
 }
 
-.five-sixths--last {
+.five-sixths:last-child {
 	@include span(10 last)
 }
 
@@ -57,7 +58,7 @@ $susy: (
 	@include span(9)
 }
 
-.three-fourths--last {
+.three-fourths:last-child {
 	@include span(9 last)
 }
 
@@ -65,7 +66,7 @@ $susy: (
 	@include span(8)
 }
 
-.two-thirds--last {
+.two-thirds:last-child {
 	@include span(8 last)
 }
 
@@ -73,15 +74,24 @@ $susy: (
 	@include span(6)
 }
 
-.half--last {
+.half:last-child {
 	@include span(6 last)
 }
+
+.five-twelfths {
+	@include span(5)
+}
+
+.five-twelfths:last-child {
+	@include span(5 last)
+}
+
 
 .third {
 	@include span(4)
 }
 
-.third--last {
+.third:last-child {
 	@include span(4 last)
 }
 
@@ -89,7 +99,7 @@ $susy: (
 	@include span(3)
 }
 
-.fourth--last {
+.fourth:last-child {
 	@include span(3 last)
 }
 
@@ -97,9 +107,18 @@ $susy: (
 	@include span(2)
 }
 
-.sixth--last {
+.sixth:last-child {
 	@include span(2 last)
 }
+
+.twelfth {
+	@include span(1)
+}
+
+.twelfth:last-child {
+	@include span(1 last)
+}
+
 
 .two-column {
 	@include columns(2 20px);
@@ -116,6 +135,30 @@ $susy: (
 	@include transform(translateY(-50%));
 }
 
+// Image layouts
+// NOTE: potentially switch back from using Susy to using these types of layouts everywhere
+
+.third-image {
+	width: 32.20339%;
+	margin-right: 1.69492%;
+	display: inline-block;
+}
+
+.third-image:last-child {
+	width: 32.20339%;
+	margin-right: 0;
+}
+
+.half-image {
+	width: 49.15254%;
+	margin-right: 1.69492%;
+	display: inline-block;
+}
+
+.half-image:nth-child(even) {
+	width: 49.15254%;
+	margin-right: 0;
+}
 
 // Margin Helpers
 
@@ -299,6 +342,36 @@ $susy: (
 	margin-top: $four;
 }
 
+.margin-five--all {
+	margin: $five;
+}
+
+.margin-five--sides {
+	margin-left: $five;
+	margin-right: $five;
+}
+
+.margin-five--ends {
+	margin-top: $five;
+	margin-bottom: $five;
+}
+
+.margin-five--left {
+	margin-left: $five;
+}
+
+.margin-five--right {
+	margin-right: $five;
+}
+
+.margin-five--bottom {
+	margin-bottom: $five;
+}
+
+.margin-five--top {
+	margin-top: $five;
+}
+
 // Padding Helpers
 
 .padding-half--all {
@@ -479,4 +552,34 @@ $susy: (
 
 .padding-four--top {
 	padding-top: $four;
+}
+
+.padding-five--all {
+	padding: $five;
+}
+
+.padding-five--sides {
+	padding-left: $five;
+	padding-right: $five;
+}
+
+.padding-five--ends {
+	padding-top: $five;
+	padding-bottom: $five;
+}
+
+.padding-five--left {
+	padding-left: $five;
+}
+
+.padding-five--right {
+	padding-right: $five;
+}
+
+.padding-five--bottom {
+	padding-bottom: $five;
+}
+
+.padding-five--top {
+	padding-top: $five;
 }

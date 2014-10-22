@@ -12,28 +12,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: $three;
-	line-height: $three-and-half;
+	font-size: $five;
+	line-height: $five-and-half;
 	margin-bottom: $one-and-half;
 }
 
 h2 {
-	font-size: $two-and-half;
+	font-size: $three;
 	line-height: $four;
 	margin-bottom: $one;
 }
 
 h3 {
-	font-size: $two;
+	font-size: $two-and-half;
 	line-height: $three;
 	margin-top: $one;
 	margin-bottom: $one;
 }
 
 p {
-	font-size: $one-and-half;
-	line-height: $two;
 	margin-bottom: $two;
+	font-size: 1.75rem;
+	line-height: 2.75rem;
+	opacity: 0.8;
 }
 
 a {
@@ -52,6 +53,11 @@ a {
 	font-size: 1.3rem;
 	line-height: 1.8rem;
 }
+
+// .large {
+// 	font-size: 1.75rem;
+// 	line-height: 2.25rem;
+// }
 
 .italic {
 	font-style: italic;

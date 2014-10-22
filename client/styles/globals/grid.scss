@@ -1,0 +1,33 @@
+.gridlines {
+	height: 1150px;
+	position: absolute;
+	z-index: 10000;
+	top: 0;
+	width: 100%;
+
+	.grid-wrapper {
+		position: absolute;
+		width: 100%;
+		top: 0;
+	}
+
+	.grid {
+		height: 1150px;
+		border-left: 1px solid red;
+		border-right: 1px solid red;
+		// position: absolute;
+
+		&.half {
+			background-color: rgba(49, 49, 49, 0.4);
+		}
+		&.third {
+			background-color: rgba(49, 49, 49, 0.4);
+		}
+		&.fourth {
+			background-color: rgba(49, 49, 49, 0.4);
+		}
+		&.sixth {
+			background-color: rgba(49, 49, 49, 0.4);
+		}
+	}
+}

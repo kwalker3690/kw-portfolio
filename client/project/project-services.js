@@ -4,7 +4,7 @@ angular.module('portfolio.projects-services', [])
 	var projects = [
 		{
 			name: 'Appception',
-			url: 'Appception',
+			url: 'appception',
 			tags: ['javascript', 'angular', 'node', 'express', 'html', 'css', 'sass', 'ui', 'personal']
 		},
 		{
@@ -28,13 +28,13 @@ angular.module('portfolio.projects-services', [])
 			tags: ['ux', 'ui', 'html', 'css', 'sass', 'personal']
 		},
 		{
-			name: "Inkling's Whitelabeled Store for Elsevier",
-			url: 'inkling-elsevier-whitelabel',
+			name: "Migration of Elsevier Users to Inkling",
+			url: 'inkling-elsevier-migration',
 			tags: ['ux', 'ui', 'user testing', 'html', 'css', 'sass', 'professional']
 		},
 		{
-			name: "Migration of Elsevier Users to Inkling",
-			url: 'inkling-elsevier-migration',
+			name: "Inkling's Whitelabeled Store for Elsevier",
+			url: 'inkling-elsevier-whitelabel',
 			tags: ['ux', 'ui', 'user testing', 'html', 'css', 'sass', 'professional']
 		},
 		{

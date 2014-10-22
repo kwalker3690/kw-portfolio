@@ -1,5 +1,6 @@
 angular.module('portfolio.projects', [
-	'portfolio.projects-services'])
+	'portfolio.projects-services',
+	'bootstrapLightbox'])
 
 .controller('ProjectController', ['$scope', '$stateParams', 'ProjectData', function ($scope, $stateParams, ProjectData) {
 	$scope.projects = ProjectData;
@@ -9,6 +10,7 @@ angular.module('portfolio.projects', [
 		name: ''
 	}
 
+	// This function sets up pagination
 	// Get name of project for breadcrumb
 	ProjectData.forEach(function(value, index, array) {
 		if($stateParams.projectUrl === value.url) {
