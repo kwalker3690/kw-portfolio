@@ -11,6 +11,16 @@
 	// TEMP: REMOVE LATER
 	background-color: $med-gray;
 
+	@media only screen
+	and (max-width: 600px) {
+		height: 350px;
+	}
+
+	@media only screen
+	and (max-width: 480px) {
+		height: 280px;
+	}
+
 	.background--overlay {
 		width: 100%;
 		height:100%;

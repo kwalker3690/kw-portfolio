@@ -38,6 +38,17 @@ html {
 	font-size: 12px;
 	position: relative;
 	min-height: 100%;
+
+
+	@media only screen
+	and (max-width: 768px) {
+		font-size: 11px;
+	}
+
+	@media only screen
+	and (max-width: 480px) {
+		font-size: 10px;
+	}
 }
 
 body {

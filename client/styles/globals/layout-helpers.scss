@@ -8,12 +8,23 @@ $susy: (
 
 .container {
 	@include container(1400px);
+	padding: 0 $two;
 	position: relative;
 }
 
 // Large margin to not have content overlap background images
 .container-first {
 	margin-top: 525px;
+
+	@media only screen
+	and (max-width: 600px) {
+		margin-top: 355px;
+	}
+
+	@media only screen
+	and (max-width: 480px) {
+		margin-top: 285px;
+	}
 }
 
 .row {
@@ -72,11 +83,19 @@ $susy: (
 }
 
 .half {
-	@include span(6)
+	width: 48%;
+	display: inline-block;
+	margin-right: 2%;
+	vertical-align: middle;
+	// @include span(6)
 }
 
-.half:last-child {
-	@include span(6 last)
+.half:nth-child(even) {
+	width: 48%;
+	display: inline-block;
+	margin-right: 0%;
+	vertical-align: middle;
+	// @include span(6 last)
 }
 
 .five-twelfths {
@@ -120,9 +139,13 @@ $susy: (
 	@include span(1 last)
 }
 
-
 .two-column {
 	@include columns(2 20px);
+
+	@media only screen
+	and (max-width: 600px) {
+		@include columns(1 20px);
+	}
 }
 
 .align-center {
@@ -136,44 +159,24 @@ $susy: (
 	@include transform(translateY(-50%));
 }
 
-// Image layouts
-// NOTE: potentially switch back from using Susy to using these types of layouts everywhere
-
-.fourth-image {
-	width: 22.85714%;
-	margin-right: 2.85714%;
+.display-inline-block {
+	float: none;
 	display: inline-block;
 }
 
-.fourth-image {
-	width: 22.85714%;
-	margin-right: 0;
-	display: inline-block;
+// Media queries
+@media only screen
+and (max-width: 675px) {
+	// .grid class allows layouts to maintain their form, used for multi image layouts
+	.half:not(.grid){
+		width: 100%
+	}
+
+	.half:nth-child(even):not(.grid){
+		width: 100%
+	}
 }
 
-.third-image {
-	width: 32.20339%;
-	margin-right: 1.69492%;
-	display: inline-block;
-}
-
-.third-image:last-child {
-	width: 32.20339%;
-	display: inline-block;
-	margin-right: 0;
-}
-
-.half-image {
-	width: 49.15254%;
-	margin-right: 1.69492%;
-	display: inline-block;
-}
-
-.half-image:nth-child(even) {
-	width: 49.15254%;
-	display: inline-block;
-	margin-right: 0;
-}
 
 // Margin Helpers
 

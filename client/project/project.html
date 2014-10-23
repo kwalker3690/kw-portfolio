@@ -8,7 +8,7 @@
 	<div ng-include="'project/projectTemplates/' + template.url + '/' + template.url + '.html'"></div>
 
 	<div class="container row">
-		<p class="float-left"><a ui-sref="project({projectUrl: previousProject.url})" ng-show="previousProject" class="italic gray">Previous: {{ previousProject.name }}</a></p>
-		<p class="float-right"><a ui-sref="project({projectUrl: nextProject.url})" ng-show="nextProject" class="italic gray">Next: {{ nextProject.name }}</a></p>
+		<p class="float-left italic gray small" ng-show="previousProject" >← <a ui-sref="project({projectUrl: previousProject.url})"class="italic gray"> Previous: {{ previousProject.name }}</a></p>
+		<p class="padding-half--right float-right italic gray small" ng-show="nextProject"><a ui-sref="project({projectUrl: nextProject.url})" class="italic gray">Next: {{ nextProject.name }}</a> ➞</p>
 	</div>
 </div>
