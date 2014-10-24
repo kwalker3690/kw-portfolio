@@ -1,0 +1,14 @@
+.btn {
+	text-decoration: none;
+	border: 1px solid $black;
+	color: $black;
+	border-radius: $two;
+	padding: $one $one-and-half;
+	margin: $one;
+	transition: border-color .2s, color .2s;
+
+	&:hover {
+		color: $blue;
+		border-color: $blue;
+	}
+}

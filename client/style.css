@@ -81,6 +81,10 @@ a:hover {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .small {
   font-size: 1.3rem;
   line-height: 1.8rem;
@@ -123,7 +127,7 @@ a:hover {
 
 .row {
   padding-top: 4rem;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 .inline-list li {
@@ -752,6 +756,30 @@ a:hover {
   background-color: rgba(49, 49, 49, 0.4);
 }
 
+.reverse {
+  background-color: #111;
+  color: #FFF;
+}
+
+.blue-bgd {
+  background-color: #00657F;
+  color: #FFF;
+}
+
+.btn {
+  text-decoration: none;
+  border: 1px solid #111;
+  color: #111;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  transition: border-color .2s, color .2s;
+}
+.btn:hover {
+  color: #00CAFF;
+  border-color: #00CAFF;
+}
+
 header {
   height: 5rem;
   background: #16161E;
@@ -853,6 +881,32 @@ footer ul li a:hover {
   margin-bottom: 0;
 }
 
+.category h1 {
+  color: #F0F0F4;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 180px;
+  line-height: 109px;
+}
+@media only screen and (max-width: 768px) {
+  .category h1 {
+    font-size: 155px;
+    line-height: 92px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .category h1 {
+    font-size: 125px;
+    line-height: 67px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .category h1 {
+    font-size: 80px;
+    line-height: 34px;
+  }
+}
+
 .bread-crumb {
   position: absolute;
   width: 100%;
@@ -881,6 +935,38 @@ footer ul li a:hover {
 
 .lightbox-nav {
   font-size: inherit;
+}
+.lightbox-nav .close {
+  background: none;
+  border-radius: 50%;
+  border: 1px solid #726F7A;
+  color: #726F7A;
+  outline: none;
+  line-height: 12px;
+  font-size: 12px;
+  transition: opacity .2s;
+}
+.lightbox-nav .close:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.lightbox-nav .btn-group .btn-xs {
+  padding: 0 1rem;
+}
+
+.lightbox {
+  transition: opacity .2s;
+}
+.lightbox:hover {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+  opacity: 0.8;
+}
+
+.lightbox-image-container img {
+  border: 1px solid #B8B8BB;
 }
 
 .modal-open {
@@ -928,7 +1014,7 @@ footer ul li a:hover {
 
 .modal-content {
   position: relative;
-  background-color: #fff;
+  background-color: #F0F0F4;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #999;
@@ -1124,7 +1210,11 @@ footer ul li a:hover {
 .home .background {
   background-image: url("../images/hero.jpg");
 }
+.home .background .background--overlay {
+  background: -webkit-linear-gradient(transparent, #111);
+}
 .home ul > li a {
+  text-decoration: none;
   display: block;
   background: #FDFCFC;
   box-shadow: 0 1px 1px #B8B8BB;
@@ -1139,6 +1229,9 @@ footer ul li a:hover {
 }
 .home ul > li a h2 {
   margin-bottom: 0;
+}
+.home ul.tags {
+  margin-left: -0.5rem;
 }
 
 iframe {
@@ -1192,14 +1285,6 @@ img {
 
 img.retina {
   width: 50%;
-}
-
-.category h1 {
-  color: #F0F0F4;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 180px;
-  line-height: 109px;
 }
 
 hr {

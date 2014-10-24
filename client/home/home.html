@@ -3,7 +3,6 @@
 		<div class="title">
 			<h1>Projects</h1>
 		</div>
-		<p>image with code and phone goes here</p>
 		<div class="background--overlay"></div>
 	</div>
 	<div class="container container-first">
@@ -11,11 +10,14 @@
 			<ul>
 				<li ng-repeat="aProject in projects">
 					<a ui-sref="project({projectUrl: aProject.url})" class="padding-three--all clear-after margin-two--bottom">
-						<h2 class="float-left">{{ aProject.name }}</h2>
-
-						<ul class="float-right inline-list margin-one--top">
-							<li ng-repeat="tag in aProject.tags" class="tag">{{ tag }}</li>
-						</ul>
+						<!-- <div  class="half"> -->
+							<h2>{{ aProject.name }}</h2>
+							<!-- <h4></h4> -->
+							<p class="small margin-one--ends">{{aProject.year}} | <span class=" italic ">{{aProject.description}}</span></p>
+							<ul class="tags inline-list">
+								<li ng-repeat="tag in aProject.tags" class="tag margin-one--top">{{ tag }}</li>
+							</ul>
+						</div>
 					</a>
 				</li>
 			</ul>

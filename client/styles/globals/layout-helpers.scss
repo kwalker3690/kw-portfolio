@@ -29,7 +29,7 @@ $susy: (
 
 .row {
 	padding-top: $four;
-	margin-bottom: $four;
+	padding-bottom: $four;
 }
 
 .inline-list li{
@@ -176,7 +176,6 @@ and (max-width: 675px) {
 		width: 100%
 	}
 }
-
 
 // Margin Helpers
 

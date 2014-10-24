@@ -1,87 +1,94 @@
-<div class="background">
-	<div class="title">
-		<h1 class="text-center">Redesigning the Product Details Page</h1>
+<div ng-controller="InklingProductDetailsController">
+	<div class="container"></div>
+	<div class="background">
+		<div class="background--overlay"></div>
 	</div>
-	<div class="background--overlay"></div>
-</div>
-<div class="container container-first">
-	<div class="row">
-		<div class="half">
-			<h3>Problem</h3>
-			<p>Low rates of conversion to purchase from our Product Details Page.</p>
+	<div class="container-first">
+		<div class="container row">
+			<h1 class="text-center">Redesigning the Product Details Page</h1>
+			<ul class="inline-list text-center margin-two--top">
+				<li ng-repeat="tag in projectInfo.tags" class="tag margin-half--ends">{{tag}}</li>
+			</ul>
 		</div>
-		<div class="half">
-			<h3>Solution</h3>
-			<p>A multi sprint redesign, covering UX, UI, and HTML/CSS implementation.</p>
+		<hr class="container">
+		<div class="container row">
+			<div class="half">
+				<h2>Problem</h2>
+				<p>Low rates of conversion to purchase from our Product Details Page.</p>
+			</div>
+			<div class="half">
+				<h2>Solution</h2>
+				<p>A multi sprint redesign, covering UX, UI, and HTML/CSS implementation.</p>
+			</div>
 		</div>
-	</div>
+		<hr class="container">
 
-	<div class="row">
-		<p>The Inkling Product Details Page (aka PDP) was the page our users would navigate to to find out more information about a certain book. The idea behind this page is that by providing further information about the book, we could convert users to purchase. However, our conversion rates were terribly low. We made it a goal to raise them over the course of one quarter by redesigning the entire page from the ground up.</p>
+		<div class="container row">
+			<p>The Inkling Product Details Page (aka PDP) was the page our users would navigate to to find out more information about a certain book. The idea behind this page is that by providing further information about the book, we could convert users to purchase. However, our conversion rates were terribly low. We made it a goal to raise them over the course of one quarter by redesigning the entire page from the ground up.</p>
 
-		<p>We began by thinking about how and why users entered our site. We looked at historical user research we'd done on the page, which led to further questions that we asked in new user interviews. We also analyzed a very informative questionnaire we'd placed on the checkout confirmation page, asking users why they decided to purchase an Inkling eBook. Through this information, we distilled our user base down to two main types: the casual user and the specific user. The casual user is in a browsing mode. When they get to a PDP of a title that piques their interest, they are looking for further information such as what is this book about, why should I buy it on Inkling, what does it look like inside, what did other people think about this book? They need a lot of information to make their decision. The specific user is someone looking for a certain book. They may have found Inkling through a google search, in which they probably know nothing about it as a platform, or they may have been reccommended Inkling or have used it before. In either case, we found we needed to be telling the user a lot more about each book and about Inkling as a whole to help them make a purchase decision.</p>
-		<p>We did a series of sprints to come up with the new design. Each sprint took place over two weeks. The first three days of each sprint we booked a room for ourselves and did a deep dive into our users and their needs pertaining to each sprint topic.The rest of the two weeks was spent refining and implementing.</p>
-	</div>
-
-	<div class="row">
-		[INSERT WIREFRAME IMAGE]
-		<h2>Sprint 1: Initial Outline</h2>
-		<p>Before we could focus too much on adding information to the page, we wanted to make sure we had a good base page layout to work with. The existing PDP had a lot of unuseful white space, as well as a visual style that fell short of our other products. We reorganized the existing information on the page to take more advantage of above the fold space.</p>
-	</div>
-
-	<div class="row">
-		<div class="half">
-			<p>We came up with two potential solutions that we tested on users. In user testing, we presented these at actual size on the browser to users. Invariably they preferred the more packed option (left). Users continually expressed that this had more information for them to make a purchase decision with. In reality, both layouts contained exactly the same amount of information, but the left had all of the information above the fold and close to the purchase button.</p>
+			<p>We began by thinking about how and why users entered our site. We looked at historical user research we'd done on the page, which led to further questions that we asked in new user interviews. We also analyzed a very informative questionnaire we'd placed on the checkout confirmation page, asking users why they decided to purchase an Inkling eBook. Through this information, we distilled our user base down to two main types: the casual user and the specific user. The casual user is in a browsing mode. When they get to a PDP of a title that piques their interest, they are looking for further information such as what is this book about, why should I buy it on Inkling, what does it look like inside, what did other people think about this book? They need a lot of information to make their decision. The specific user is someone looking for a certain book. They may have found Inkling through a google search, in which they probably know nothing about it as a platform, or they may have been reccommended Inkling or have used it before. In either case, we found we needed to be telling the user a lot more about each book and about Inkling as a whole to help them make a purchase decision.</p>
+			<p>We did a series of sprints to come up with the new design. Each sprint took place over two weeks. The first three days of each sprint we booked a room for ourselves and did a deep dive into our users and their needs pertaining to each sprint topic.The rest of the two weeks was spent refining and implementing.</p>
 		</div>
-		<div class="image-placement half">[INSERT TWO VERSIONS IMAGE]</div>
-	</div>
 
-	<div class="row">
-		<div class="half image-placement">
-			[INSERT ANDROID IMAGE HERE]
+		<div class="container row">
+			[INSERT WIREFRAME IMAGE]
+			<h2>Sprint 1: Initial Outline</h2>
+			<p>Before we could focus too much on adding information to the page, we wanted to make sure we had a good base page layout to work with. The existing PDP had a lot of unuseful white space, as well as a visual style that fell short of our other products. We reorganized the existing information on the page to take more advantage of above the fold space.</p>
 		</div>
-		<div class="half">
-			<p>Throughout this project I continued my efforts to bring the all of the Inkling product’s visual designs closer together. The blurred background follows a design pattern another product designer began in our Android app. I was constantly looking for ways to use small design elements from our various products so that our products will visually appear as a cohesive suite.</p>
-		</div>
-	</div>
 
-	<div class="row">
-		<h2>Sprint 2: Differentitation</h2>
-		<p>In our user testing, we found time and time again that people would arrive upon the PDP and have no idea what they were looking at. They had trouble figuring out that it was an eBook, let alone that it was an eBook with enhanced features.</p>
-		<p>And in fact, Inkling books were on average a tad more expensive than their Kindle counterparts. Users would come to this page and have no idea why they would want to spend more on Inkling when they could buy it on Amazon. In one user test we performed, the user came to the PDP, and in a matter of seconds searched for the book's title on Amazon. He found that it was cheaper on Amazon so he said "Well since its cheaper on Amazon I would definitely purchase this book there."</p>
-		<p>So we set out on another sprint to add elements of differentiation to our page, aspects that would tell a user what made Inkling books different and worth extra money.</p>
-	</div>
-
-	<div class="row">
-		<div class="half">
-			<p>We began this sprint by referring back to the checkout questionnaire from our purchase confirmation page that asked users why did they purchase the Inkling book. Top answers were: the interactive features, particularly the videos and questionnaires, as well as in-book search and the ability to have the book offline on their mobile device. Then we did some further user testing on this topic, asking users what made them want to purchase an eBook from anywhere, not just from Inkling. From this we learned that people were more likely to purchase if they knew it was a book that was popular with peers in their field. We also learned that they relied on brand recognition, so if medical users saw the logo of an academic institution that they respected or if travel users saw the logo of a well known travel book brand they would be more likely to purchase. We took all of those learnings and came up with multiple different messaging and layouts to A/B test, to see which would increase purchase conversion rate.</p>
+		<div class="row">
+			<div class="container half">
+				<p>We came up with two potential solutions that we tested on users. In user testing, we presented these at actual size on the browser to users. Invariably they preferred the more packed option (left). Users continually expressed that this had more information for them to make a purchase decision with. In reality, both layouts contained exactly the same amount of information, but the left had all of the information above the fold and close to the purchase button.</p>
+			</div>
+			<div class="image-placement half">[INSERT TWO VERSIONS IMAGE]</div>
 		</div>
-		<div class="half image-placement">
-			[INSERT COMPONENTS IMAGE HERE]
-		</div>
-	</div>
 
-	<div class="full-wrapper">
-		<div class="full container">
+		<div class="container row">
+			<div class="half image-placement">
+				[INSERT ANDROID IMAGE HERE]
+			</div>
+			<div class="half">
+				<p>Throughout this project I continued my efforts to bring the all of the Inkling product’s visual designs closer together. The blurred background follows a design pattern another product designer began in our Android app. I was constantly looking for ways to use small design elements from our various products so that our products will visually appear as a cohesive suite.</p>
+			</div>
+		</div>
+
+		<div class="container row">
+			<h2>Sprint 2: Differentitation</h2>
+			<p>In our user testing, we found time and time again that people would arrive upon the PDP and have no idea what they were looking at. They had trouble figuring out that it was an eBook, let alone that it was an eBook with enhanced features.</p>
+			<p>And in fact, Inkling books were on average a tad more expensive than their Kindle counterparts. Users would come to this page and have no idea why they would want to spend more on Inkling when they could buy it on Amazon. In one user test we performed, the user came to the PDP, and in a matter of seconds searched for the book's title on Amazon. He found that it was cheaper on Amazon so he said "Well since its cheaper on Amazon I would definitely purchase this book there."</p>
+			<p>So we set out on another sprint to add elements of differentiation to our page, aspects that would tell a user what made Inkling books different and worth extra money.</p>
+		</div>
+
+		<div class="container row">
+			<div class="half">
+				<p>We began this sprint by referring back to the checkout questionnaire from our purchase confirmation page that asked users why did they purchase the Inkling book. Top answers were: the interactive features, particularly the videos and questionnaires, as well as in-book search and the ability to have the book offline on their mobile device. Then we did some further user testing on this topic, asking users what made them want to purchase an eBook from anywhere, not just from Inkling. From this we learned that people were more likely to purchase if they knew it was a book that was popular with peers in their field. We also learned that they relied on brand recognition, so if medical users saw the logo of an academic institution that they respected or if travel users saw the logo of a well known travel book brand they would be more likely to purchase. We took all of those learnings and came up with multiple different messaging and layouts to A/B test, to see which would increase purchase conversion rate.</p>
+			</div>
+			<div class="half image-placement">
+				[INSERT COMPONENTS IMAGE HERE]
+			</div>
+		</div>
+
+		<div class="container row">
 			<h2>Sprint 3: Content Sampling</h2>
 			<p>In our user testing, we asked users what they look at when they are making purchasing decisions. The answers varied, but often centered around the same idea: users wanted to peek inside the book to see what the content was like. We figured out ways to enable them to generically sample the content, you know, allow them to see the first chapter of the book, allow them to get a free chapter of the book, etc. But in many cases this doesn’t give the best impression of what the book is about or its content. So after a day of intense brainstorming on a whiteboard, sketching out many many different ideas, I came up with the idea of tailoring the sampling to the type of book.</p>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="half image-placement">
-			[INSERT CURATED WIREFRAME HERE]
+		<div class="container row">
+			<div class="half image-placement">
+				[INSERT CURATED WIREFRAME HERE]
+			</div>
+			<div class="half">
+				<p>Inkling best selling books fall into a few main categories. Top categories were medical, cookbooks, and travel books. Each of these have a pretty drastically different type of content from each other. I realized that the best way to explain the benefit of these books was to show off their best content. I designed a system for our marketing team to be able to highlight the top content from each book, which recipes were the most delicious or which maps in a travel book had the best details. This allowed us to not only show off the content, but also the interactivity of the books, without the user having to even leave the PDP. This was a feature that was meant to feel very curated, a special touch added to our best selling books. For our other books they could still decipher information about the book from the table of contents list and by previewing a free sample/chapter.</p>
+			</div>
 		</div>
-		<div class="half">
-			<p>Inkling best selling books fall into a few main categories. Top categories were medical, cookbooks, and travel books. Each of these have a pretty drastically different type of content from each other. I realized that the best way to explain the benefit of these books was to show off their best content. I designed a system for our marketing team to be able to highlight the top content from each book, which recipes were the most delicious or which maps in a travel book had the best details. This allowed us to not only show off the content, but also the interactivity of the books, without the user having to even leave the PDP. This was a feature that was meant to feel very curated, a special touch added to our best selling books. For our other books they could still decipher information about the book from the table of contents list and by previewing a free sample/chapter.</p>
-		</div>
-	</div>
 
-	<div class="row">
-		<div class="half">
-			<p>So compiling all of those sprints together we came up with this very lengthy page that held a TON more information that helps users make purchase decisions, as well as was visually more in sync with our other products.</p>
-		</div>
-		<div class="half image-placement">
-			[INSERT FINAL LAYOUT HERE]
+		<div class="container row">
+			<div class="half">
+				<p>So compiling all of those sprints together we came up with this very lengthy page that held a TON more information that helps users make purchase decisions, as well as was visually more in sync with our other products.</p>
+			</div>
+			<div class="half image-placement">
+				[INSERT FINAL LAYOUT HERE]
+			</div>
 		</div>
 	</div>
+</div>

@@ -5,7 +5,48 @@
 
 .lightbox-nav {
   font-size: inherit;
+
+  .close {
+    background: none;
+    border-radius: 50%;
+    border: 1px solid $med-gray;
+    color: $med-gray;
+    outline: none;
+    line-height: 12px;
+    font-size: 12px;
+    transition: opacity .2s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5
+    }
+  }
+
+  .btn-group {
+    .btn-xs {
+      padding: 0 $one;
+    }
+  }
 }
+
+.lightbox {
+  transition: opacity .2s;
+
+  &:hover {
+    cursor: pointer;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+    opacity: 0.8;
+  }
+}
+
+.lightbox-image-container {
+  img {
+    border: 1px solid $med-light-gray;
+  }
+}
+
 .modal-open {
   overflow: hidden;
 }
@@ -45,7 +86,7 @@
 }
 .modal-content {
   position: relative;
-  background-color: #fff;
+  background-color: $light-gray;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #999;

@@ -8,6 +8,8 @@
 @import 'globals/typography-helpers';
 @import 'globals/layout-helpers';
 @import 'globals/grid';
+@import 'globals/color-schemes';
+@import 'globals/buttons';
 
 // Component SASS
 @import 'components/header';
@@ -71,16 +73,6 @@ img {
 
 img.retina {
 	width: 50%
-}
-
-.category {
-	h1 {
-		color: $light-gray;
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 180px;
-		line-height: 109px;
-	}
 }
 
 hr {
