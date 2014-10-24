@@ -5,3 +5,4 @@ azure.err
 .sass-cache/*
 psds/*
 *.psd
+client/lib/*
