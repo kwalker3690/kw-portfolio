@@ -292,6 +292,10 @@ a:hover {
   transform: translateY(-50%);
 }
 
+.vert-align-bottom {
+  vertical-align: bottom;
+}
+
 .display-inline-block {
   float: none;
   display: inline-block;
