@@ -778,7 +778,7 @@ a:hover {
   opacity: 0.4;
 }
 
-.btn {
+.button {
   text-decoration: none;
   border: 1px solid #111;
   color: #111;
@@ -787,7 +787,7 @@ a:hover {
   margin: 1rem;
   transition: border-color .2s, color .2s;
 }
-.btn:hover {
+.button:hover {
   color: #00CAFF;
   border-color: #00CAFF;
   cursor: pointer;
@@ -948,6 +948,9 @@ footer ul li a:hover {
 
 .lightbox-nav {
   font-size: inherit;
+  border-bottom: 1px solid rgba(31, 24, 103, 0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  padding-bottom: 1rem;
 }
 .lightbox-nav .close {
   background: none;
@@ -955,8 +958,8 @@ footer ul li a:hover {
   border: 1px solid #726F7A;
   color: #726F7A;
   outline: none;
-  line-height: 12px;
-  font-size: 12px;
+  line-height: 1rem;
+  font-size: 1rem;
   transition: opacity .2s;
 }
 .lightbox-nav .close:hover {
@@ -964,7 +967,28 @@ footer ul li a:hover {
   opacity: 0.5;
 }
 .lightbox-nav .btn-group .btn-xs {
+  color: #726F7A;
+  text-decoration: none;
+  font-size: 1.2rem;
   padding: 0 1rem;
+}
+.lightbox-nav .btn-group .btn-xs:hover {
+  cursor: pointer;
+  color: #00CAFF;
+}
+
+.lightbox-image-caption {
+  position: relative;
+  text-shadow: none;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 1.5rem 2rem;
+  font-style: italic;
+  color: #726F7A;
+}
+.lightbox-image-caption span {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .lightbox {
@@ -1023,9 +1047,11 @@ footer ul li a:hover {
   position: relative;
   width: auto;
   margin: 10px;
+  min-width: 580px;
 }
 
 .modal-content {
+  height: auto !important;
   position: relative;
   background-color: #F0F0F4;
   -webkit-background-clip: padding-box;

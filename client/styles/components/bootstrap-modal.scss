@@ -5,6 +5,9 @@
 
 .lightbox-nav {
   font-size: inherit;
+  border-bottom: 1px solid rgba(31, 24, 103, 0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  padding-bottom: $one;
 
   .close {
     background: none;
@@ -12,8 +15,8 @@
     border: 1px solid $med-gray;
     color: $med-gray;
     outline: none;
-    line-height: 12px;
-    font-size: 12px;
+    line-height: $one;
+    font-size: $one;
     transition: opacity .2s;
 
     &:hover {
@@ -24,8 +27,31 @@
 
   .btn-group {
     .btn-xs {
+      color: $med-gray;
+      text-decoration: none;
+      font-size: 1.2rem;
       padding: 0 $one;
+
+      &:hover {
+        cursor: pointer;
+        color: $blue;
+      }
     }
+  }
+}
+
+.lightbox-image-caption {
+  position: relative;
+  text-shadow: none;
+  font-weight: normal;
+  font-size: $one-and-half;
+  margin: $one-and-half $two;
+  font-style: italic;
+  color: $med-gray;
+
+  span {
+    background-color: transparent;
+    box-shadow: none;
   }
 }
 
@@ -83,8 +109,10 @@
   position: relative;
   width: auto;
   margin: 10px;
+  min-width: 580px;
 }
 .modal-content {
+  height: auto !important;
   position: relative;
   background-color: $light-gray;
   -webkit-background-clip: padding-box;

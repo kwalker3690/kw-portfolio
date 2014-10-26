@@ -8,8 +8,8 @@
 		<div class="container row">
 			<h1 class="text-center">Appception</h1>
 			<div class="text-center margin-four--ends">
-				<a href="http://appception.azurewebsites.net/" class="btn"><i class="fa fa-lg fa-link margin-one--right"></i>Visit Site</a>
-				<a href="https://github.com/kwalker3690/appception" class="btn"><i class="fa fa-lg fa-github margin-one--right"></i>View Repo</a>
+				<a href="http://appception.azurewebsites.net/" class="button"><i class="fa fa-lg fa-link margin-one--right"></i>Visit Site</a>
+				<a href="https://github.com/kwalker3690/appception" class="button"><i class="fa fa-lg fa-github margin-one--right"></i>View Repo</a>
 			</div>
 			<ul class="inline-list text-center margin-two--top">
 				<li ng-repeat="tag in projectInfo.tags" class="tag margin-half--ends">{{tag}}</li>
@@ -86,11 +86,18 @@
 		</div>
 
 		<div class="container row">
-			<div class="image-placement">
-				[RECURSIVE DIRECTIVES SNIPPET & OUTPUT]
-			</div>
-			<p>One of my favorite aspects of my front end Angular work was the recursive directives I set up. I wanted to display to users the file structure of the generators they could pick on the new repo page. To do this, I set up two directives that recursively build up a file structure based on a JSON input by checking to see whether each level of the JSON has children or not; if there are children, it is a folder that needs to be recursed upon, if not, it is a file.</p>
+			<p>One of my favorite aspects of my front end Angular work was the recursive directives I set up. I wanted to display to users the file structure of the generators they could pick on the new repo page. To do this, I set up two directives that recursively build up a file structure based on a JSON input given from reading the file template structure in the server. These directives check to see whether each level of the JSON has children or not; if there are children, it is a folder that needs to be recursed upon, if not, it is a file.</p>
+			<ul class="margin-two--bottom">
+				<li ng-repeat="image in recursive" class="fourth">
+					<a ng-click="openLightboxModal('recursive', $index)" class="lightbox">
+						<p class="small gray italic">{{ image.shortCaption }}</p>
+						<img ng-src="{{image.thumbUrl}}" class="thumbnail">
+					</a>
+				</li>
+			</ul>
+		</div>
 
+		<div class="container row">
 			<p>Try out <a href="http://appception.azurewebsites.net/">Appception</a> for yourself and see if it helps improve your workflow!</p>
 		</div>
 	</div>

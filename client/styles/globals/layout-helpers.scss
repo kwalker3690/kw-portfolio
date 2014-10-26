@@ -115,6 +115,20 @@ $susy: (
 	@include span(4 last)
 }
 
+// .fourth {
+// 	width: 22.85714%;
+// 	display: inline-block;
+// 	vertical-align: middle;
+// 	margin-right: 2.85714%;
+// }
+
+// .fourth:last-child {
+// 	width: 22.85714%;
+// 	display: inline-block;
+// 	margin-right: 0%;
+// 	vertical-align: middle;
+// }
+
 .fourth {
 	@include span(3)
 }
