@@ -9,56 +9,32 @@ angular.module('portfolio.projects')
 			}
 		})
 
-		$scope.disparateStyles = [
+		$scope.projects = [
 
 			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/open-inkling-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/open-inkling-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/inkling-web-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/inkling-web-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/chapter-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/chapter-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/reader-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/reader-thumb.jpg'
+				'url': 'project/projectTemplates/appception/images/projects-full.jpg',
+				'thumbUrl': 'project/projectTemplates/appception/images/projects-thumb.jpg'
 			}
 		];
 
-		$scope.buttons = [
+		$scope.newProject = [
 			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/buttons-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/buttons-thumb.jpg'
+				'url': 'project/projectTemplates/appception/images/new-project-full.jpg',
+				'thumbUrl': 'project/projectTemplates/appception/images/new-project-thumb.jpg'
 			}
 		];
 
-		$scope.dropbox = [
+		$scope.fileEditor = [
 			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/form-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/form-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/text-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/text-thumb.jpg'
+				'url': 'project/projectTemplates/appception/images/file-editor-full.jpg',
+				'thumbUrl': 'project/projectTemplates/appception/images/file-editor-thumb.jpg'
 			}
 		];
 
-		$scope.final = [
+		$scope.node = [
 			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/open-inkling-final-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/open-inkling-final-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/homepage-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/homepage-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/reader-final-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/reader-final-thumb.jpg'
+				'url': 'project/projectTemplates/appception/images/node-full.jpg',
+				'thumbUrl': 'project/projectTemplates/appception/images/node-thumb.jpg'
 			}
 		];
 

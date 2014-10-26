@@ -1,9 +1,25 @@
 .reverse {
 	background-color: $black;
 	color: $white;
+
+	a {
+		color: $white;
+
+		&:hover {
+			opacity: 0.4
+		}
+	}
 }
 
 .blue-bgd {
 	background-color: $blue-deep;
 	color: $white;
+
+	a {
+		color: $white;
+
+		&:hover {
+			opacity: 0.4
+		}
+	}
 }

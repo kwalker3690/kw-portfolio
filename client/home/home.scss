@@ -1,6 +1,8 @@
 .home {
 	.background {
 		background-image: url('../images/hero.jpg');
+		background-position: 50% 80%;
+
 		.background--overlay {
 			background: -webkit-linear-gradient(	transparent, $black);
 		}
@@ -27,6 +29,32 @@
 
 		&.tags {
 			margin-left: -$half;
+		}
+	}
+
+	.project {
+		overflow: hidden;
+		position: relative;
+
+		&:hover {
+			.project-inner {
+				// right: 110%;
+			}
+			.project-hover {
+				left: 0;
+			}
+		}
+
+		.project-inner {
+			position: relative;
+			transition: right .2s;
+		}
+
+		.project-hover {
+			position: relative;
+			left: 110%;
+			transition: left .2s;
+			float: right;
 		}
 	}
 }

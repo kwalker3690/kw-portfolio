@@ -760,10 +760,22 @@ a:hover {
   background-color: #111;
   color: #FFF;
 }
+.reverse a {
+  color: #FFF;
+}
+.reverse a:hover {
+  opacity: 0.4;
+}
 
 .blue-bgd {
   background-color: #00657F;
   color: #FFF;
+}
+.blue-bgd a {
+  color: #FFF;
+}
+.blue-bgd a:hover {
+  opacity: 0.4;
 }
 
 .btn {
@@ -778,6 +790,7 @@ a:hover {
 .btn:hover {
   color: #00CAFF;
   border-color: #00CAFF;
+  cursor: pointer;
 }
 
 header {
@@ -1209,6 +1222,7 @@ footer ul li a:hover {
 
 .home .background {
   background-image: url("../images/hero.jpg");
+  background-position: 50% 80%;
 }
 .home .background .background--overlay {
   background: -webkit-linear-gradient(transparent, #111);
@@ -1232,6 +1246,23 @@ footer ul li a:hover {
 }
 .home ul.tags {
   margin-left: -0.5rem;
+}
+.home .project {
+  overflow: hidden;
+  position: relative;
+}
+.home .project:hover .project-hover {
+  left: 0;
+}
+.home .project .project-inner {
+  position: relative;
+  transition: right .2s;
+}
+.home .project .project-hover {
+  position: relative;
+  left: 110%;
+  transition: left .2s;
+  float: right;
 }
 
 iframe {
