@@ -1,28 +1,32 @@
-<div class="background">
-		<div class="title">
+<div ng-controller="NewsSearchController">
 	<div class="container">
-			<h1 class="float-left">New York Times Visual Search</h1>
-			<div class="float-right">
-				<a href="http://news-site.azurewebsites.net/">View Site</a>
-				<a href="https://github.com/kwalker3690/news-site">View Github Repo</a>
+	</div>
+	<div class="background">
+		<div class="background--overlay"></div>
+	</div>
+	<div class="container-first">
+		<div class="container row">
+			<h1 class="text-center">New York Times Visual Search</h1>
+			<div class="text-center margin-four--ends">
+				<a href="http://news-site.azurewebsites.net/" class="button"><i class="fa fa-lg fa-link margin-one--right"></i>Visit Site</a>
+				<a href="https://github.com/kwalker3690/news-site" class="button"><i class="fa fa-lg fa-github margin-one--right"></i>View Repo</a>
 			</div>
+			<ul class="inline-list text-center margin-two--top">
+				<li ng-repeat="tag in projectInfo.tags" class="tag margin-half--ends">{{tag}}</li>
+			</ul>
 		</div>
-	</div>
-	<div class="background--overlay"></div>
-</div>
-<div class="container container-first">
-	<div class="row">
-		<div class="third image-placement">
-			[SOME SCREENSHOTS]
+		<hr class="container">
+		<div class="container row">
+			<div class="half">
+				<ul class="margin-two--bottom">
+					<li ng-repeat="image in images" class="half">
+						<a ng-click="openLightboxModal('images', $index)" class="lightbox">
+							<img ng-src="{{image.thumbUrl}}">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p class="half">I built this Angular/Node app over a two day solo hackathon at Hack Reactor. This was one of my first experiences working with an external Javascript API, the New York Times API. Every time a user searches for a topic, the NYT API is queried and the results are displayed in a visual manner using the resulting images.</p>
 		</div>
-		<div class="third image-placement">
-			[SOME SCREENSHOTS]
-		</div>
-		<div class="third--last image-placement">
-			[SOME SCREENSHOTS]
-		</div>
-	</div>
-	<div class="row">
-		<p>I built this Angular/Node app over a two day solo hackathon at Hack Reactor. This was one of my first experiences working with an external Javascript API, the New York Times API. Every time a user searches for a topic, the NYT API is queried and the results are displayed in a visual manner using the resulting images.</p>
 	</div>
 </div>

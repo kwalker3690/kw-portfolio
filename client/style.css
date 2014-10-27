@@ -1227,6 +1227,7 @@ footer ul li a:hover {
 
 .news-search .background {
   background-image: url("../project/projectTemplates/news-search/images/hero.jpg");
+  background-position: 50% 10%;
 }
 
 .github-scout .background {
