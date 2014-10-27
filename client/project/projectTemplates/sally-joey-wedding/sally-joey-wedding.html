@@ -1,35 +1,53 @@
-<div class="background">
-		<div class="title">
+<div ng-controller="SallyJoeyController">
 	<div class="container">
-			<h1 class="float-left">Sally and Joey's Wedding Website</h1>
-			<div class="float-right">
-				<a href="http://kellywalkerdesign.com/sallyjoey/">View Site</a>
-				<a href="https://github.com/kwalker3690/sallywedding">View Github Repo</a>
+	</div>
+	<div class="background">
+		<div class="background--overlay"></div>
+	</div>
+	<div class="container-first">
+		<div class="container row">
+			<h1 class="text-center">Sally and Joey's Wedding Website</h1>
+			<div class="text-center margin-four--ends">
+				<a href="http://kellywalkerdesign.com/sallyjoey/" class="button"><i class="fa fa-lg fa-link margin-one--right"></i>Visit Site</a>
+				<a href="https://github.com/kwalker3690/sallywedding" class="button"><i class="fa fa-lg fa-github margin-one--right"></i>View Repo</a>
+			</div>
+			<ul class="inline-list text-center margin-two--top">
+				<li ng-repeat="tag in projectInfo.tags" class="tag margin-half--ends">{{tag}}</li>
+			</ul>
+		</div>
+		<hr class="container">
+		<div class="container row">
+			<p>I designed and implemented the website for my friends' wedding from the ground up. This was a chance for me to just totally have fun with visual design, so I decided to create one long scrolling page with parallax background images. It’s built with HTML, SASS, and Javascript.</p>
+
+			<p>I was very unfamiliar with Javascript when I began this project, so I used this opportunity to increase knowledge by integrating with some JS libraries. I worked with Skrollr to create the parallax effect. The links are scrolled to from the nav with a Jquery script.</p>
+		</div>
+		<div class="container row">
+			<div class="half">
+				<ul class="margin-two--bottom">
+					<li ng-repeat="image in desktop">
+						<a ng-click="openLightboxModal('desktop', $index)" class="lightbox">
+							<img ng-src="{{image.thumbUrl}}">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="half">
+				<p>The visual design incorporates some classic elements like swirling web fonts, but gets modernized by flat buttons with condensed font and a little trendy parallax. The large images highlight the beauty of the couple, what the site is all about!</p>
 			</div>
 		</div>
-	</div>
-	<div class="background--overlay"></div>
-</div>
-<div class="container container-first">
-	<div class="row">
-		<p>I designed and implemented the website for my friends' wedding from the ground up. This was a chance for me to just totally have fun with visual design, so I decided to create one long scrolling page with parallax background images. It’s built with HTML, SASS, and Javascript.</p>
-
-		<p>I was very unfamiliar with Javascript when I began this project, so I used this opportunity to increase knowledge by integrating with some JS libraries. I worked with Skrollr to create the parallax effect. The links are scrolled to from the nav with a Jquery script.</p>
-	</div>
-	<div class="row">
-		<div class="half image-placement">
-			[SCREENSHOT OF DESIGN ELEMENTS]
-		</div>
-		<div class="half">
-			<p>The visual design incorporates some classic elements like swirling web fonts, but gets modernized by flat buttons with condensed font and a little trendy parallax. The large images highlight the beauty of the couple, what the site is all about!</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="half">
-			<p>This website would be sent out to invitees on a paper invitation as well as through an email. I figured that it was likely that some people would open the site on their mobile phones, so I implemented this site with a responsive layout.</p>
-		</div>
-		<div class="half image-placement">
-			[SCREENSHOT OF MOBILE LAYOUT]
+		<div class="container row">
+			<div class="half">
+				<p>This website would be sent out to invitees on a paper invitation as well as through an email. I figured that it was likely that some people would open the site on their mobile phones, so I implemented this site with a responsive layout.</p>
+			</div>
+			<div class="half">
+				<ul class="margin-two--bottom">
+					<li ng-repeat="image in mobile">
+						<a ng-click="openLightboxModal('mobile', $index)" class="lightbox">
+							<img ng-src="{{image.thumbUrl}}">
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
