@@ -57,4 +57,8 @@ module.exports = function(grunt) {
   	'jshint',
     'sass'
   ]);
+
+  grunt.registerTask('build', [
+    'sass'
+  ]);
 };
