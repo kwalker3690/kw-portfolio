@@ -1,8 +1,8 @@
-angular.module('portfolio.projects', [
-	'portfolio.projects-services',
-	'bootstrapLightbox'])
+angular.module('portfolio.project-templates', [
+	'portfolio.projects-services'
+	])
 
-.controller('ProjectsController', ['$scope', '$stateParams', 'ProjectData', function ($scope, $stateParams, ProjectData) {
+.controller('ProjectTemplatesController', ['$scope', '$stateParams', 'ProjectData', function ($scope, $stateParams, ProjectData) {
 	$scope.projects = ProjectData;
 
 	$scope.template = {

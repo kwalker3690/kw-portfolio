@@ -1205,6 +1205,23 @@ footer ul li a:hover {
   }
 }
 
+.projects .background {
+  background-image: url("../images/hero.jpg");
+  background-position: 50% 80%;
+}
+.projects .background .background--overlay {
+  background: -webkit-linear-gradient(transparent, #111);
+}
+.projects ul > li a {
+  text-decoration: none;
+  display: block;
+  background: #FDFCFC;
+  box-shadow: 0 1px 1px #B8B8BB;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
 .inkling-style-guide .background {
   background-image: url("../project/projectTemplates/inkling-style-guide/images/hero.jpg");
 }
@@ -1251,6 +1268,14 @@ footer ul li a:hover {
   filter: url("#filtre2");
 }
 
+ul[rn-carousel] {
+  height: 490px;
+}
+
+ul[rn-carousel] > li > a {
+  height: 490px;
+}
+
 .home .background {
   background-image: url("../images/hero.jpg");
   background-position: 50% 80%;
@@ -1261,14 +1286,8 @@ footer ul li a:hover {
 .home ul > li a {
   text-decoration: none;
   display: block;
-  background: #FDFCFC;
-  box-shadow: 0 1px 1px #B8B8BB;
-  -webkit-transition: background 0.2s;
-  -moz-transition: background 0.2s;
-  transition: background 0.2s;
 }
 .home ul > li a:hover {
-  background: #FFF;
   color: #111;
   cursor: pointer;
 }
@@ -1301,6 +1320,14 @@ iframe {
   height: 450px;
   border: 1px solid #E6E6E6;
   margin-bottom: 30px;
+}
+
+.about .background {
+  background-image: url("../images/startups_hero.jpg");
+  background-position: 50% 80%;
+}
+.about .background .background--overlay {
+  background: -webkit-linear-gradient(transparent, #111);
 }
 
 html, body {

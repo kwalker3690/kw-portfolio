@@ -1,0 +1,31 @@
+<div class="projects">
+	<div class="background category">
+		<div class="title">
+			<h1>Projects</h1>
+		</div>
+		<div class="background--overlay"></div>
+	</div>
+	<div class="container container-first">
+		<div class="row">
+			<ul>
+				<li ng-repeat="aProject in projects">
+					<a ui-sref="project({projectUrl: aProject.url})" class="padding-three--all margin-two--bottom project">
+						<div  class="project-inner">
+							<h2>{{ aProject.name }}</h2>
+							<!-- <h4></h4> -->
+							<p class="small margin-one--ends">{{aProject.year}} | <span class=" italic ">{{aProject.description}}</span></p>
+							<ul class="tags inline-list">
+								<li ng-repeat="tag in aProject.tags" class="tag margin-one--top">{{ tag }}</li>
+							</ul>
+						</div>
+						<!-- <div class="project-hover">
+							<h3 class="text-center">View Project</h3>
+							<i class="fa fa-eye"></i>
+						</div> -->
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>

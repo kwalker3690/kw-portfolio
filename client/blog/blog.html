@@ -1,0 +1,21 @@
+<div class="blog">
+	<div class="background category">
+		<div class="title">
+			<h1>Blog</h1>
+		</div>
+		<div class="background--overlay"></div>
+	</div>
+	<div class="container container-first">
+		<ul>
+			<li ng-repeat="post in blogPosts">
+				<a ui-sref="post({postUrl: post.url})" class="padding-three--all margin-two--bottom">
+					<h3>{{ post.name }}</h3>
+					<h4>{{ post.date }}</h4>
+					<p class=" italic margin-one--ends">{{post.snippet}}</p>
+				</a>
+			</li>
+		</ul>
+
+	</div>
+
+</div>

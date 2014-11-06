@@ -21,10 +21,12 @@
 @import 'components/three-images';
 
 // File specific SASS
+@import '../project/projects';
 @import '../project/project-templates';
 @import '../directives/directives';
 @import '../home/home';
 @import '../blog/blog';
+@import '../about/about';
 
 
 html, body {

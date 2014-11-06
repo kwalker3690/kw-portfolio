@@ -1,0 +1,14 @@
+<div ng-class="template.url">
+	<div class="container row bread-crumb">
+		<div class="bread-crumb--inner small">
+			<a ui-sref="home">Blog</a> > {{template.name}}
+		</div>
+	</div>
+
+	<div ng-include="'blog/' + template.url + '/' + template.url + '.html'"></div>
+
+	<div class="container row">
+		<p class="float-left italic gray small" ng-show="previousBlogPost" >← <a ui-sref="blogPost({blogPostUrl: previousBlogPost.url})"class="italic gray"> Previous: {{ previousBlogPost.name }}</a></p>
+		<p class="padding-half--right float-right italic gray small" ng-show="nextBlogPost"><a ui-sref="blogPost({blogPostUrl: nextBlogPost.url})" class="italic gray">Next: {{ nextBlogPost.name }}</a> ➞</p>
+	</div>
+</div>

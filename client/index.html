@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="lib/angular-loading-bar/build/loading-bar.css">
 	<link rel="stylesheet" href="lib/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css">
 	<link rel="stylesheet" href="lib/components-font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="lib/angular-carousel/dist/angular-carousel.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -17,9 +18,9 @@
 				</div>
 				<div class="float-right">
 					<ul>
-						<li><a href="/">Projects</a></li>
-						<li><a href="/">Blog</a></li>
-						<li><a href="/">About</a></li>
+						<li><a ui-sref="projects">Projects</a></li>
+						<li><a ui-sref="blog">Blog</a></li>
+						<li><a ui-sref="about">About</a></li>
 					</ul>
 				</div>
 			</div>
@@ -44,17 +45,25 @@
 	<script src="lib/angular-touch/angular-touch.js"></script>
 	<script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 	<script src="lib/angular-loading-bar/build/loading-bar.js"></script>
+	<script src="lib/angular-carousel/dist/angular-carousel.js"></script>
 	<script src="lib/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js"></script>
-	<script src="home/home.js"></script>
-	<script src="project/projects.js"></script>
+
 	<script src="project/project-services.js"></script>
+	<script src="project/projects.js"></script>
+	<script src="project/project-templates.js"></script>
 	<script src="project/projectTemplates/inkling-style-guide/inkling-style-guide.js"></script>
 	<script src="project/projectTemplates/appception/appception.js"></script>
 	<script src="project/projectTemplates/tate-art-explorer/tate-art-explorer.js"></script>
 	<script src="project/projectTemplates/github-scout/github-scout.js"></script>
 	<script src="project/projectTemplates/news-search/news-search.js"></script>
 	<script src="project/projectTemplates/sally-joey-wedding/sally-joey-wedding.js"></script>
+	<script src="project/projectTemplates/inkling-elsevier-migration/inkling-elsevier-migration.js"></script>
+	<script src="blog/blog-services.js"></script>
+	<script src="blog/blog-templates.js"></script>
+	<script src="blog/blog.js"></script>
+	<script src="about/about.js"></script>
 	<script src="directives/directives.js"></script>
+	<script src="home/home.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>
