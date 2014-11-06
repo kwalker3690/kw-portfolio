@@ -12,6 +12,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-nodemon": "^0.3.0",
     "grunt-sass": "^0.14.1",
+    "grunt-cli": "^0.1.13",
     "node-bourbon": "^1.2.3"
   },
   "devDependencies": {},
