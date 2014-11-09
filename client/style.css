@@ -1315,7 +1315,6 @@ ul[rn-carousel] > li > a {
 }
 .home .background .background--overlay {
   background: -webkit-linear-gradient(transparent, #111);
-  opacity: 0.3;
 }
 .home .container-first {
   margin-top: 935px;
@@ -1368,6 +1367,14 @@ iframe {
   height: 450px;
   border: 1px solid #E6E6E6;
   margin-bottom: 30px;
+}
+
+.blog .background {
+  background-image: url("../images/hero-blog.jpg");
+  background-position: 50% 80%;
+}
+.blog .background .background--overlay {
+  background: -webkit-linear-gradient(transparent, #111);
 }
 
 .about .background {
