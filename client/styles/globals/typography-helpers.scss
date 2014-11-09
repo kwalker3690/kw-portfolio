@@ -63,10 +63,10 @@ a {
 	line-height: 1.8rem;
 }
 
-// .large {
-// 	font-size: 1.75rem;
-// 	line-height: 2.25rem;
-// }
+.large {
+	font-size: $two;
+	line-height: $three;
+}
 
 .italic {
 	font-style: italic;
@@ -74,4 +74,12 @@ a {
 
 .gray {
 	color: $med-gray;
+}
+
+.white {
+	color: $white;
+}
+
+.uppercase {
+	text-transform: uppercase;
 }

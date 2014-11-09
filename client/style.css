@@ -90,12 +90,25 @@ a:hover {
   line-height: 1.8rem;
 }
 
+.large {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
 .italic {
   font-style: italic;
 }
 
 .gray {
   color: #726F7A;
+}
+
+.white {
+  color: #FFF;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .container {
@@ -282,14 +295,15 @@ a:hover {
   margin-right: auto;
 }
 
-.vert-align-center {
+.vert-align-center--parent {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .vert-align-bottom {
@@ -782,7 +796,9 @@ a:hover {
   opacity: 0.4;
 }
 
-.button {
+.button,
+.button-white,
+.button-large {
   text-decoration: none;
   border: 1px solid #111;
   color: #111;
@@ -790,11 +806,25 @@ a:hover {
   padding: 1rem 1.5rem;
   margin: 1rem;
   transition: border-color .2s, color .2s;
+  display: inline-block;
 }
-.button:hover {
+.button:hover,
+.button-white:hover,
+.button-large:hover {
   color: #00CAFF;
   border-color: #00CAFF;
   cursor: pointer;
+}
+
+.button-white {
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.button-large {
+  min-width: 170px;
+  font-size: 2rem;
+  border-radius: 3rem;
 }
 
 header {
@@ -1206,7 +1236,7 @@ footer ul li a:hover {
 }
 
 .projects .background {
-  background-image: url("../images/hero.jpg");
+  background-image: url("../images/hero-projects.jpg");
   background-position: 50% 80%;
 }
 .projects .background .background--overlay {
@@ -1279,9 +1309,27 @@ ul[rn-carousel] > li > a {
 .home .background {
   background-image: url("../images/hero.jpg");
   background-position: 50% 80%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
 }
 .home .background .background--overlay {
   background: -webkit-linear-gradient(transparent, #111);
+  opacity: 0.3;
+}
+.home .container-first {
+  margin-top: 935px;
+}
+.home .monogram {
+  z-index: 3;
+}
+.home .monogram img {
+  max-width: 70%;
+}
+.home .monogram p {
+  opacity: 1;
+  font-size: 3rem;
+  line-height: 3.5rem;
 }
 .home ul > li a {
   text-decoration: none;

@@ -1,19 +1,21 @@
 <div class="home">
-	<div class="background category">
-		<div class="title">
+	<div class="background">
+		<!-- <div class="title">
 			<h1>Home</h1>
+		</div> -->
+		<div class="white vert-align-center--parent text-center monogram">
+			<div class="vert-align-center--child">
+				<img src="images/monogram.png">
+				<h1 class="uppercase">Kelly Walker</h1>
+				<p class="italic">Product Designer & Developer</p>
+				<div class="margin-top--two">
+					<a ui-sref="projects" class="button-white button-large">Projects</a>
+					<a ui-sref="blog" class="button-white button-large">Blog</a>
+				</div>
+			</div>
 		</div>
 		<div class="background--overlay"></div>
-		<ul rn-carousel class="image">
-				<li ng-repeat="aProject in projects">
-					<a ui-sref="project({projectUrl: aProject.url})" class="padding-three--all margin-two--bottom" ng-style="{'background-image': 'url(project/projectTemplates/' + aProject.url + '/images/hero.jpg)'}" >
-						<h3>{{ aProject.name }}</h3>
-						<p class=" italic margin-one--ends">{{aProject.description}}</p>
-						<div class="bgimage"></div>
-					</a>
-				</li>
-			</ul>
-	</div>
+<!-- 	</div>
 	<div class="container container-first">
 		<ul>
 			<li ng-repeat="post in blogPosts">
@@ -24,6 +26,6 @@
 					</a>
 			</li>
 		</ul>
-	</div>
+	</div> -->
 
 </div>

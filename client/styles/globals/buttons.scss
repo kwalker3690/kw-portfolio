@@ -1,4 +1,5 @@
-.button {
+.button,
+%button {
 	text-decoration: none;
 	border: 1px solid $black;
 	color: $black;
@@ -6,10 +7,25 @@
 	padding: $one $one-and-half;
 	margin: $one;
 	transition: border-color .2s, color .2s;
+	display: inline-block;
 
 	&:hover {
 		color: $blue;
 		border-color: $blue;
 		cursor: pointer;
 	}
+}
+
+.button-white {
+	@extend %button;
+	color: $white;
+	border-color: $white;
+}
+
+
+.button-large {
+	@extend %button;
+	min-width: 170px;
+	font-size: $two;
+	border-radius: $three;
 }
