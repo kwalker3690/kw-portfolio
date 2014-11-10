@@ -19,6 +19,7 @@
 @import 'components/bootstrap-modal';
 @import 'components/tag';
 @import 'components/three-images';
+@import 'components/large-list';
 
 // File specific SASS
 @import '../project/projects';
@@ -63,7 +64,7 @@ body {
 
 pre.prettyprint {
 	font-family: $source-code;
-	background: $light-gray;
+	background: $white;
 	padding: $two;
 	border: none;
 	margin-bottom: $four;

@@ -7,14 +7,4 @@
 			background: -webkit-linear-gradient(	transparent, $black);
 		}
 	}
-
-	ul{
-		> li a{
-			text-decoration: none;
-			display: block;
-			background: $pale-gray;
-			@include box-shadow(0 1px 1px $med-light-gray);
-			@include transition(background .2s);
-		}
-	}
 }

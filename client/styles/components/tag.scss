@@ -5,4 +5,8 @@
 	margin-right: $half;
 	padding-left: $half;
 	padding-right: $half;
+
+	&:first-child {
+		margin-left: 0;
+	}
 }

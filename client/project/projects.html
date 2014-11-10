@@ -7,14 +7,14 @@
 	</div>
 	<div class="container container-first">
 		<div class="row">
-			<ul>
+			<ul class="large-list">
 				<li ng-repeat="aProject in projects">
 					<a ui-sref="project({projectUrl: aProject.url})" class="padding-three--all margin-two--bottom project">
-						<div  class="project-inner">
+						<div class="project-inner">
 							<h2>{{ aProject.name }}</h2>
 							<!-- <h4></h4> -->
 							<p class="small margin-one--ends">{{aProject.year}} | <span class=" italic ">{{aProject.description}}</span></p>
-							<ul class="tags inline-list">
+							<ul class="inline-list">
 								<li ng-repeat="tag in aProject.tags" class="tag margin-one--top">{{ tag }}</li>
 							</ul>
 						</div>

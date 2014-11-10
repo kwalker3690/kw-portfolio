@@ -316,11 +316,15 @@ a:hover {
 }
 
 @media only screen and (max-width: 675px) {
-  .half:not(.grid) {
+  .fourth:not(.grid),
+  .half:not(.grid),
+  .three-fourths:not(.grid) {
     width: 100%;
   }
 
-  .half:nth-child(even):not(.grid) {
+  .fourth:last-child:not(.grid),
+  .half:nth-child(even):not(.grid),
+  .three-fourths:last-child:not(.grid) {
     width: 100%;
   }
 }
@@ -1193,6 +1197,9 @@ footer ul li a:hover {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.tag:first-child {
+  margin-left: 0;
+}
 
 .three-images {
   position: relative;
@@ -1235,14 +1242,7 @@ footer ul li a:hover {
   }
 }
 
-.projects .background {
-  background-image: url("../images/hero-projects.jpg");
-  background-position: 50% 80%;
-}
-.projects .background .background--overlay {
-  background: -webkit-linear-gradient(transparent, #111);
-}
-.projects ul > li a {
+ul.large-list > li a {
   text-decoration: none;
   display: block;
   background: #FDFCFC;
@@ -1250,6 +1250,14 @@ footer ul li a:hover {
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
+}
+
+.projects .background {
+  background-image: url("../images/hero-projects.jpg");
+  background-position: 50% 80%;
+}
+.projects .background .background--overlay {
+  background: -webkit-linear-gradient(transparent, #111);
 }
 
 .inkling-style-guide .background {
@@ -1417,7 +1425,7 @@ body {
 
 pre.prettyprint {
   font-family: "Source Code Pro", monospace;
-  background: #F0F0F4;
+  background: #FFF;
   padding: 2rem;
   border: none;
   margin-bottom: 4rem;

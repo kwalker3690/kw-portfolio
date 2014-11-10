@@ -187,11 +187,15 @@ $susy: (
 @media only screen
 and (max-width: 675px) {
 	// .grid class allows layouts to maintain their form, used for multi image layouts
-	.half:not(.grid){
+	.fourth:not(.grid),
+	.half:not(.grid),
+	.three-fourths:not(.grid){
 		width: 100%
 	}
 
-	.half:nth-child(even):not(.grid){
+	.fourth:last-child:not(.grid),
+	.half:nth-child(even):not(.grid),
+	.three-fourths:last-child:not(.grid){
 		width: 100%
 	}
 }
