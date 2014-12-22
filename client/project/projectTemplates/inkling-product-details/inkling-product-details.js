@@ -9,61 +9,44 @@ angular.module('portfolio.projects')
 			}
 		})
 
-		$scope.disparateStyles = [
+		$scope.wireframe = [
 
 			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/open-inkling-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/open-inkling-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/inkling-web-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/inkling-web-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/chapter-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/chapter-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/reader-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/reader-thumb.jpg'
+				'url': 'project/projectTemplates/inkling-product-details/images/wireframe-full.png',
+				'thumbUrl': 'project/projectTemplates/inkling-product-details/images/wireframe-thumb.jpg'
 			}
 		];
 
-		$scope.buttons = [
+		$scope.twoOptions = [
+
 			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/buttons-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/buttons-thumb.jpg'
+				'url': 'project/projectTemplates/inkling-product-details/images/two-options.jpg',
+				'thumbUrl': 'project/projectTemplates/inkling-product-details/images/two-options.jpg'
 			}
 		];
 
-		$scope.dropbox = [
+		$scope.components = [
+
 			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/form-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/form-thumb.jpg'
-			},
+				'url': 'project/projectTemplates/inkling-product-details/images/components.jpg',
+				'thumbUrl': 'project/projectTemplates/inkling-product-details/images/components.jpg'
+			}
+		];
+
+
+		$scope.sampling = [
 			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/text-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/text-thumb.jpg'
+				'url': 'project/projectTemplates/inkling-product-details/images/content-sampling.jpg',
+				'thumbUrl': 'project/projectTemplates/inkling-product-details/images/content-sampling.jpg'
 			}
 		];
 
 		$scope.final = [
 			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/open-inkling-final-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/open-inkling-final-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/homepage-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/homepage-thumb.jpg'
-			},
-			{
-				'url': 'project/projectTemplates/inkling-style-guide/images/reader-final-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-style-guide/images/reader-final-thumb.jpg'
+				'url': 'project/projectTemplates/inkling-product-details/images/final.jpg',
+				'thumbUrl': 'project/projectTemplates/inkling-product-details/images/final.jpg'
 			}
 		];
-
-
-
 
 		$scope.openLightboxModal = function(groupname, index) {
 			Lightbox.openModal($scope[groupname], index)

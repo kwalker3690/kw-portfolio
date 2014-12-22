@@ -12,15 +12,24 @@ angular.module('portfolio.projects')
 		$scope.flow = [
 
 			{
-				'url': 'project/projectTemplates/inkling-elsevier-migration/images/flow-full.jpg',
-				'thumbUrl': 'project/projectTemplates/inkling-elsevier-migration/images/flow-thumb.jpg'
+				'url': 'project/projectTemplates/inkling-elsevier-migration/images/flow.jpg',
+				'thumbUrl': 'project/projectTemplates/inkling-elsevier-migration/images/flow.jpg'
 			}
 		];
 
-		$scope.language = [
+		$scope.password = [
+
 			{
-				'url': 'project/projectTemplates/github-scout/images/lang-graph-full.jpg',
-				'thumbUrl': 'project/projectTemplates/github-scout/images/lang-graph-thumb.jpg'
+				'url': 'project/projectTemplates/inkling-elsevier-migration/images/password.jpg',
+				'thumbUrl': 'project/projectTemplates/inkling-elsevier-migration/images/password.jpg'
+			}
+		];
+
+		$scope.migration = [
+
+			{
+				'url': 'project/projectTemplates/inkling-elsevier-migration/images/migration.jpg',
+				'thumbUrl': 'project/projectTemplates/inkling-elsevier-migration/images/migration.jpg'
 			}
 		];
 

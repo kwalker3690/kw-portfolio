@@ -62,7 +62,7 @@ $susy: (
 	@include span(10)
 }
 
-.five-sixths:last-child {
+.grid > .five-sixths:last-child {
 	@include span(10 last)
 }
 
@@ -70,7 +70,7 @@ $susy: (
 	@include span(9)
 }
 
-.three-fourths:last-child {
+.grid > .three-fourths:last-child {
 	@include span(9 last)
 }
 
@@ -78,7 +78,7 @@ $susy: (
 	@include span(8)
 }
 
-.two-thirds:last-child {
+.grid > .two-thirds:last-child {
 	@include span(8 last)
 }
 
@@ -90,7 +90,7 @@ $susy: (
 	// @include span(6)
 }
 
-.half:nth-child(even) {
+.grid > .half:nth-child(even) {
 	width: 48%;
 	display: inline-block;
 	margin-right: 0%;
@@ -102,7 +102,7 @@ $susy: (
 	@include span(5)
 }
 
-.five-twelfths:last-child {
+.grid > .five-twelfths:last-child {
 	@include span(5 last)
 }
 
@@ -111,7 +111,7 @@ $susy: (
 	@include span(4)
 }
 
-.third:last-child {
+.grid > .third:last-child {
 	@include span(4 last)
 }
 
@@ -133,7 +133,7 @@ $susy: (
 	@include span(3)
 }
 
-.fourth:last-child {
+.grid > .fourth:last-child {
 	@include span(3 last)
 }
 
@@ -141,7 +141,7 @@ $susy: (
 	@include span(2)
 }
 
-.sixth:last-child {
+.grid > .sixth:last-child {
 	@include span(2 last)
 }
 
@@ -149,7 +149,7 @@ $susy: (
 	@include span(1)
 }
 
-.twelfth:last-child {
+.grid > .twelfth:last-child {
 	@include span(1 last)
 }
 
@@ -165,6 +165,7 @@ $susy: (
 .align-center {
 	margin-left:auto;
 	margin-right: auto;
+	float:none;
 }
 
 .vert-align-center--parent {
@@ -186,7 +187,7 @@ $susy: (
 // Media queries
 @media only screen
 and (max-width: 675px) {
-	// .grid class allows layouts to maintain their form, used for multi image layouts
+	// .grid > class allows layouts to maintain their form, used for multi image layouts
 	.fourth:not(.grid),
 	.half:not(.grid),
 	.three-fourths:not(.grid){

@@ -173,7 +173,7 @@ a:hover {
   margin-right: 2.85714%;
 }
 
-.five-sixths:last-child {
+.grid > .five-sixths:last-child {
   width: 82.85714%;
   float: right;
   margin-right: 0;
@@ -185,7 +185,7 @@ a:hover {
   margin-right: 2.85714%;
 }
 
-.three-fourths:last-child {
+.grid > .three-fourths:last-child {
   width: 74.28571%;
   float: right;
   margin-right: 0;
@@ -197,7 +197,7 @@ a:hover {
   margin-right: 2.85714%;
 }
 
-.two-thirds:last-child {
+.grid > .two-thirds:last-child {
   width: 65.71429%;
   float: right;
   margin-right: 0;
@@ -210,7 +210,7 @@ a:hover {
   vertical-align: middle;
 }
 
-.half:nth-child(even) {
+.grid > .half:nth-child(even) {
   width: 48%;
   display: inline-block;
   margin-right: 0%;
@@ -223,7 +223,7 @@ a:hover {
   margin-right: 2.85714%;
 }
 
-.five-twelfths:last-child {
+.grid > .five-twelfths:last-child {
   width: 40%;
   float: right;
   margin-right: 0;
@@ -235,7 +235,7 @@ a:hover {
   margin-right: 2.85714%;
 }
 
-.third:last-child {
+.grid > .third:last-child {
   width: 31.42857%;
   float: right;
   margin-right: 0;
@@ -247,7 +247,7 @@ a:hover {
   margin-right: 2.85714%;
 }
 
-.fourth:last-child {
+.grid > .fourth:last-child {
   width: 22.85714%;
   float: right;
   margin-right: 0;
@@ -259,7 +259,7 @@ a:hover {
   margin-right: 2.85714%;
 }
 
-.sixth:last-child {
+.grid > .sixth:last-child {
   width: 14.28571%;
   float: right;
   margin-right: 0;
@@ -271,7 +271,7 @@ a:hover {
   margin-right: 2.85714%;
 }
 
-.twelfth:last-child {
+.grid > .twelfth:last-child {
   width: 5.71429%;
   float: right;
   margin-right: 0;
@@ -293,6 +293,7 @@ a:hover {
 .align-center {
   margin-left: auto;
   margin-right: auto;
+  float: none;
 }
 
 .vert-align-center--parent {
@@ -939,19 +940,19 @@ footer ul li a:hover {
   font-size: 180px;
   line-height: 109px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .category h1 {
     font-size: 155px;
     line-height: 92px;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .category h1 {
     font-size: 125px;
     line-height: 67px;
   }
 }
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .category h1 {
     font-size: 80px;
     line-height: 34px;
@@ -1266,6 +1267,7 @@ ul.large-list > li a {
 
 .inkling-product-details .background {
   background-image: url("../project/projectTemplates/inkling-product-details/images/hero.jpg");
+  background-position: 0 20%;
 }
 
 .inkling-elsevier-whitelabel .background {
@@ -1274,6 +1276,7 @@ ul.large-list > li a {
 
 .inkling-elsevier-migration .background {
   background-image: url("../project/projectTemplates/inkling-elsevier-migration/images/hero.jpg");
+  background-position: 50% 33%;
 }
 
 .sally-joey-wedding .background {
