@@ -16,11 +16,11 @@
 			</ul>
 		</div>
 		<hr class="container">
-		<div class="container row">
+		<div class="container row grid">
 			<p>Our final project at Hack Reactor was a group project done over four weeks. As we brainstormed in our group of 3 what we might work on, I thought back to the struggles I had getting started with programming. A lot of them revolved around finding Git a bit complicated and being intimidated by the terminal. I also struggled a lot with setting up file structures properly. So we decided we wanted to create a product that would help newer developers set up their projects and connect them with a nice interface to Git. Thus was born Appception, a web app that creates web apps.</p>
 		</div>
 
-		<div class="container row">
+		<div class="container row grid">
 			<div class="half">
 				<ul class="margin-two--bottom">
 					<li ng-repeat="image in projects">
@@ -36,7 +36,7 @@
 		</div>
 
 		<div class="reverse">
-			<div class="container row">
+			<div class="container row grid">
 				<div class="half">
 					<p>To create a new project, they simply enter a name and choose from one of our generators. We set up many different generators, some from <a href="http://yeoman.io/">Yeoman</a> scaffolds, some from other web frameworks. Creating a new project uses the Github API to instantiate a new repo on their Github account, and add the files from the generator they chose to their account. There is also a branch added to their repo that allows the site to be automatically deployed to either Github Pages or Heroku. Once that process is complete, the user is navigated to the file editor to start working on their project.</p>
 				</div>
@@ -54,7 +54,7 @@
 
 
 		<div class="blue-bgd">
-			<div class="container row">
+			<div class="container row grid">
 				<div class="half">
 					<ul class="margin-two--bottom">
 						<li ng-repeat="image in fileEditor">
@@ -70,7 +70,7 @@
 			</div>
 		</div>
 
-		<div class="container row">
+		<div class="container row grid">
 			<div class="half">
 				<p>This was a really fun project for me to work on, not only because it was a product that I actually want to use, but because of the technologies I got to work with. I wrote most of the front end code in Angular, and did all the design and styling, implementing that in Stylus. I also set up many of the interactions with the Github API in our Node server. On the backend, I learned a ton about how to work with Node asynchronicity and how to work with reading and writing to large sets of flexible file structures.</p>
 			</div>
@@ -85,9 +85,9 @@
 			</div>
 		</div>
 
-		<div class="container row">
+		<div class="container row grid">
 			<p>One of my favorite aspects of my front end Angular work was the recursive directives I set up. I wanted to display to users the file structure of the generators they could pick on the new repo page. To do this, I set up two directives that recursively build up a file structure based on a JSON input given from reading the file template structure in the server. These directives check to see whether each level of the JSON has children or not; if there are children, it is a folder that needs to be recursed upon, if not, it is a file.</p>
-			<ul class="margin-two--bottom">
+			<ul class="margin-two--bottom grid">
 				<li ng-repeat="image in recursive" class="fourth">
 					<a ng-click="openLightboxModal('recursive', $index)" class="lightbox">
 						<p class="small gray italic">{{ image.shortCaption }}</p>
@@ -97,7 +97,7 @@
 			</ul>
 		</div>
 
-		<div class="container row">
+		<div class="container row grid">
 			<p>Try out <a href="http://appception.azurewebsites.net/">Appception</a> for yourself and see if it helps improve your workflow!</p>
 		</div>
 	</div>
