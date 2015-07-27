@@ -13,11 +13,6 @@ angular.module('portfolio', [
 		$stateProvider
 			.state('home', {
 				url: '/',
-				templateUrl: 'home/home.html',
-				controller: 'HomeController'
-			})
-			.state('projects', {
-				url: '/projects',
 				templateUrl: 'project/projects.html',
 				controller: 'ProjectsController'
 			})
@@ -25,21 +20,6 @@ angular.module('portfolio', [
 				url: '/project/:projectUrl',
 				templateUrl: 'project/project-template-wrapper.html',
 				controller: 'ProjectTemplatesController'
-			})
-			.state('blog', {
-				url: '/blog',
-				templateUrl: 'blog/blog.html',
-				controller: 'BlogController'
-			})
-			.state('blogPost', {
-				url: '/blog/:blogPostUrl',
-				templateUrl: 'blog/blog-template-wrapper.html',
-				controller: 'BlogTemplatesController'
-			})
-			.state('about', {
-				url: '/about',
-				templateUrl: 'about/about.html',
-				controller: 'AboutController'
 			})
 
 		$urlRouterProvider.otherwise('/');

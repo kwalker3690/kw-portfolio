@@ -10,10 +10,10 @@
     "components-font-awesome": "~4.2.0",
     "angular-carousel": "~0.3.5",
     "angular": "1.2.16",
-    "angular-ui-router": "~0.2.11"
+    "angular-ui-router": "~0.2.11",
+    "susy": "~2.2.5"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "resolutions": {
     "angular": "1.2.16"
   }

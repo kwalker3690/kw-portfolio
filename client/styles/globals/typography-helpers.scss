@@ -15,6 +15,11 @@ h1 {
 	font-size: $five;
 	line-height: $five-and-half;
 	margin-bottom: $one-and-half;
+
+	@media only screen
+	and (max-width: 480px) {
+		font-size: $three-and-half;
+	}
 }
 
 h2 {
@@ -26,6 +31,20 @@ h2 {
 h3 {
 	font-size: $two-and-half;
 	line-height: $three;
+	margin-top: $one;
+	margin-bottom: $one;
+}
+
+h4 {
+	font-size: $two;
+	line-height: $two-and-half;
+	margin-top: $one;
+	margin-bottom: $one;
+}
+
+h6 {
+	font-size: $one-and-half;
+	line-height: $two;
 	margin-top: $one;
 	margin-bottom: $one;
 }
@@ -66,6 +85,21 @@ a {
 .large {
 	font-size: $two;
 	line-height: $three;
+}
+
+.x-large {
+	font-size: $four;
+	line-height: $five;
+
+	@media only screen
+	and (max-width: 768px) {
+		font-size: $three;
+	}
+
+	@media only screen
+	and (max-width: 480px) {
+		font-size: $two;
+	}
 }
 
 .italic {
