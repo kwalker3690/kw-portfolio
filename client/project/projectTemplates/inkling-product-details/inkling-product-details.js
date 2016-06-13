@@ -7,10 +7,9 @@ angular.module('portfolio.projects')
 			if(value.url === 'inkling-product-details') {
 				$scope.projectInfo = value;
 			}
-		})
+		});
 
 		$scope.wireframe = [
-
 			{
 				'url': 'project/projectTemplates/inkling-product-details/images/wireframe-full.png',
 				'thumbUrl': 'project/projectTemplates/inkling-product-details/images/wireframe-thumb.jpg'
@@ -49,6 +48,6 @@ angular.module('portfolio.projects')
 		];
 
 		$scope.openLightboxModal = function(groupname, index) {
-			Lightbox.openModal($scope[groupname], index)
-		}
-	})
+			Lightbox.openModal($scope[groupname], index);
+		};
+	});

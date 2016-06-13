@@ -7,7 +7,7 @@ angular.module('portfolio.projects')
 			if(value.url === 'news-search') {
 				$scope.projectInfo = value;
 			}
-		})
+		});
 
 		$scope.images = [
 			{
@@ -21,6 +21,6 @@ angular.module('portfolio.projects')
 		];
 
 		$scope.openLightboxModal = function(groupname, index) {
-			Lightbox.openModal($scope[groupname], index)
-		}
-	})
+			Lightbox.openModal($scope[groupname], index);
+		};
+	});

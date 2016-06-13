@@ -7,7 +7,7 @@ angular.module('portfolio.projects')
 			if(value.url === 'inkling-style-guide') {
 				$scope.projectInfo = value;
 			}
-		})
+		});
 
 		$scope.disparateStyles = [
 
@@ -62,10 +62,7 @@ angular.module('portfolio.projects')
 			}
 		];
 
-
-
-
 		$scope.openLightboxModal = function(groupname, index) {
-			Lightbox.openModal($scope[groupname], index)
-		}
-	})
+			Lightbox.openModal($scope[groupname], index);
+		};
+	});

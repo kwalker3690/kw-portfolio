@@ -8,7 +8,7 @@ angular.module('portfolio.projects', [
 	$scope.template = {
 		url: $stateParams.projectUrl,
 		name: ''
-	}
+	};
 
 	// This function sets up pagination
 	// Get name of project for breadcrumb
@@ -24,7 +24,7 @@ angular.module('portfolio.projects', [
 				};
 			// otherwise hide the previous pagination
 			} else {
-				$scope.previousProject = false
+				$scope.previousProject = false;
 			}
 
 			// Same as above but for next project
@@ -32,12 +32,12 @@ angular.module('portfolio.projects', [
 				$scope.nextProject = {
 					url: array[index-1].url,
 					name: array[index-1].name
-				}
+				};
 			} else {
-				$scope.nextProject = false
+				$scope.nextProject = false;
 			}
 
 		}
-	})
+	});
 
-}])
+}]);

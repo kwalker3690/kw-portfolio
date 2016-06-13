@@ -14,7 +14,7 @@ $susy: (
 
 // Large margin to not have content overlap background images
 .container-first {
-	margin-top: 525px;
+	margin-top: 495px;
 
 	@media only screen
 	and (max-width: 600px) {
@@ -28,8 +28,8 @@ $susy: (
 }
 
 .row {
-	padding-top: $four;
-	padding-bottom: $four;
+	padding-top: $two;
+	padding-bottom: $two;
 }
 
 .inline-list li{
@@ -50,6 +50,15 @@ $susy: (
 
 .float-left {
 	float: left
+}
+
+.flex {
+	@include display(flex);
+	@include align-items(center);
+}
+
+.flex--1 {
+	@include flex(1);
 }
 
 // Grid widths

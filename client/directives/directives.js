@@ -4,8 +4,8 @@ angular.module('portfolio.directives', [])
 	return {
 		restrict: 'E',
 		scope: {
-			image: '=image'
+			image: '=image',
 		},
-		templateUrl:'directives/linear-blur.html'
-	}
-})
+		templateUrl: 'directives/linear-blur.html',
+	};
+});

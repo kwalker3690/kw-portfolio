@@ -12,9 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: $five;
+	font-size: $three-and-half;
 	line-height: $five-and-half;
-	margin-bottom: $one-and-half;
 
 	@media only screen
 	and (max-width: 480px) {
@@ -23,8 +22,8 @@ h1 {
 }
 
 h2 {
-	font-size: $three;
-	line-height: $four;
+	font-size: $two-and-half;
+	line-height: $three;
 	margin-bottom: $one;
 }
 
@@ -51,8 +50,8 @@ h6 {
 
 p {
 	margin-bottom: $two;
-	font-size: 1.5rem;
-	line-height: 2.5rem;
+	font-size: $one-and-half;
+	line-height: $two-and-half;
 	opacity: 0.8;
 
 	@media only screen
@@ -77,24 +76,14 @@ a {
 	text-align: right;
 }
 
-.small {
-	font-size: 1.3rem;
-	line-height: 1.8rem;
-}
-
 .large {
 	font-size: $two;
 	line-height: $three;
 }
 
 .x-large {
-	font-size: $four;
+	font-size: $three;
 	line-height: $five;
-
-	@media only screen
-	and (max-width: 768px) {
-		font-size: $three;
-	}
 
 	@media only screen
 	and (max-width: 480px) {

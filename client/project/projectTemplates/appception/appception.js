@@ -7,7 +7,7 @@ angular.module('portfolio.projects')
 			if(value.url === 'appception') {
 				$scope.projectInfo = value;
 			}
-		})
+		});
 
 		$scope.projects = [
 
@@ -69,6 +69,6 @@ angular.module('portfolio.projects')
 
 
 		$scope.openLightboxModal = function(groupname, index) {
-			Lightbox.openModal($scope[groupname], index)
-		}
-	})
+			Lightbox.openModal($scope[groupname], index);
+		};
+	});

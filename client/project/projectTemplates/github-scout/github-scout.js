@@ -7,10 +7,9 @@ angular.module('portfolio.projects')
 			if(value.url === 'github-scout') {
 				$scope.projectInfo = value;
 			}
-		})
+		});
 
 		$scope.user = [
-
 			{
 				'url': 'project/projectTemplates/github-scout/images/user-graph-full.jpg',
 				'thumbUrl': 'project/projectTemplates/github-scout/images/user-graph-thumb.jpg'
@@ -24,8 +23,7 @@ angular.module('portfolio.projects')
 			}
 		];
 
-
 		$scope.openLightboxModal = function(groupname, index) {
-			Lightbox.openModal($scope[groupname], index)
-		}
-	})
+			Lightbox.openModal($scope[groupname], index);
+		};
+	});

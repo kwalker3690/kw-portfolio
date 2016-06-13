@@ -53,14 +53,8 @@
 		color: $light-gray;
 		text-align: center;
 		text-transform: uppercase;
-		font-size: 170px;
-		line-height: 117px;
-
-		@media only screen
-		and (max-width: 935px) {
-			font-size: 130px;
-			line-height: 77px;
-		}
+		font-size: 130px;
+		line-height: 77px;
 
 		@media only screen
 		and (max-width: 768px) {

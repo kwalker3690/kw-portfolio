@@ -1,9 +1,14 @@
 ul.large-list {
-	> li a{
-		text-decoration: none;
-		display: block;
-		background: $pale-gray;
-		@include box-shadow(0 1px 1px $med-light-gray);
-		@include transition(background .2s);
+	> li a {
+		@include transition(all .2s);
+    text-decoration: none;
+    background: $pale-gray;
+    box-shadow: 0 1px 1px $med-light-gray;
+    padding: $two;
+    margin-bottom: $one;
+
+    &:hover {
+      box-shadow: 1px 3px 4px $med-light-gray;
+    }
 	}
 }

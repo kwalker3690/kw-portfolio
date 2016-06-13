@@ -1,11 +1,7 @@
 angular.module('portfolio', [
-	'portfolio.home',
 	'portfolio.projects',
 	'portfolio.project-templates',
 	'portfolio.directives',
-	'portfolio.blog',
-	'portfolio.blog-templates',
-	'portfolio.about',
 	'ui.router'
 	])
 
@@ -20,8 +16,7 @@ angular.module('portfolio', [
 				url: '/project/:projectUrl',
 				templateUrl: 'project/project-template-wrapper.html',
 				controller: 'ProjectTemplatesController'
-			})
-
+			});
 		$urlRouterProvider.otherwise('/');
 	})
 
