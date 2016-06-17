@@ -19,11 +19,11 @@ angular.module('portfolio.projects-services', [])
 			writeUp: true,
 		},
 		{
-			name: 'Github Scout',
-			url: 'github-scout',
-			tags: ['javascript', 'angular', 'node', 'express', 'html', 'css', 'sass', 'personal'],
+			name: 'Inkling Store Product Details',
+			url: 'inkling-product-details',
+			tags: ['ux', 'ui', 'user testing', 'html', 'css', 'sass', 'professional'],
 			year: '2014',
-			description: "An app to discover stats about you and your favorite languages' activities on Github.",
+			description: 'A redesign of one of the core pages on the Inkling web store.',
 			writeUp: true,
 		},
 		{
@@ -35,11 +35,11 @@ angular.module('portfolio.projects-services', [])
 			writeUp: false,
 		},
 		{
-			name: 'Inkling Store Product Details',
-			url: 'inkling-product-details',
-			tags: ['ux', 'ui', 'user testing', 'html', 'css', 'sass', 'professional'],
+			name: 'Github Scout',
+			url: 'github-scout',
+			tags: ['javascript', 'angular', 'node', 'express', 'html', 'css', 'sass', 'personal'],
 			year: '2014',
-			description: 'A redesign of one of the core pages on the Inkling web store.',
+			description: "An app to discover stats about you and your favorite languages' activities on Github.",
 			writeUp: true,
 		},
 		{
